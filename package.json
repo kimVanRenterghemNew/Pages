@@ -1,0 +1,22 @@
+{
+  "name": "my_pages",
+  "version": "1.0.0",
+  "description": "my public stuff",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/main.css -o ./main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimVanRenterghemNew/Pages.git"
+  },
+  "author": "kim.vanrenterghem@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimVanRenterghemNew/Pages/issues"
+  },
+  "homepage": "https://kimvanrenterghemnew.github.io/Pages",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  }
+}
