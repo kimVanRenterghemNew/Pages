@@ -560,6 +560,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -814,6 +818,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -850,6 +859,11 @@ video {
 .text-yellow-100 {
   --tw-text-opacity: 1;
   color: rgb(254 249 195 / var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
 .text-yellow-200 {
