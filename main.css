@@ -722,6 +722,15 @@ video {
   background-color: rgb(32 29 29 / var(--tw-bg-opacity));
 }
 
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#252B33\]\/50 {
   background-color: rgb(37 43 51 / 0.5);
 }
@@ -746,6 +755,11 @@ video {
 
 .bg-slate-100\/75 {
   background-color: rgb(241 245 249 / 0.75);
+}
+
+.bg-\[\#fff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .p-8 {
