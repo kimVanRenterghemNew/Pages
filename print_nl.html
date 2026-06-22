@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print - Kim Van Renterghem</title>
+  <link href="main.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      color: #111;
+      background: #fff;
+    }
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .print-header {
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #ddd;
+    }
+    .print-header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .print-header p {
+      margin: 12px 0 0;
+      font-size: 1rem;
+      color: #333;
+    }
+    .button-row {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .button-row button,
+    .button-row a {
+      border: 1px solid #333;
+      background: #f4f4f4;
+      color: #111;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+    .section h2 {
+      margin: 0 0 14px;
+      font-size: 1.75rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+    }
+    .card {
+      padding: 18px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.35rem;
+    }
+    .card p {
+      margin: 10px 0;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+    .card p.date {
+      margin: 0 0 10px;
+      color: #555;
+      font-weight: 600;
+    }
+    .session-card {
+      border-color: #bbb;
+    }
+    .session-card h3 {
+      margin-bottom: 10px;
+    }
+    .session-card ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: #111;
+    }
+    .session-card ul li {
+      margin-bottom: 8px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .profile-text p {
+      margin: 0 0 12px;
+      line-height: 1.8;
+    }
+    .no-print {
+      display: none;
+    }
+    @media print {
+      .button-row {
+        display: none;
+      }
+      body {
+        background: #fff;
+      }
+      .wrapper {
+        padding: 0;
+      }
+      .section {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="print-header">
+      <h1>Kim Van Renterghem</h1>
+      <p>Be more Effective not Efficient • Increase Communication • Write code as text</p>
+      <div class="button-row">
+        <button onclick="window.print()">Print</button>
+        <a href="index_nl.html">Terug naar web</a>
+      </div>
+    </header>
+
+    <section class="section profile">
+      <h2>Profiel</h2>
+      <div class="card profile-text">
+        <img src="img/ikke.jpeg" alt="Profiel foto" style="width: 180px; height: auto; border-radius: 14px; margin-bottom: 18px;">
+        <p>Creatief, Leergierig, Team Speler, Vernieuwende denker.</p>
+        <p>Als gepassioneerde developer vind ik het geweldig om business problemen om te zetten in code op een creatieve manier. Mijn carrière toont een consistent patroon: niet alleen oplossingen leveren, maar teams naar een hoger niveau tillen. Of ik nu architectuur definieer voor complexe systemen, legacy applicaties moderniseer of engineering practices invoer – ik zorg dat teams zelf sterker en onafhankelijker worden.</p>
+        <p>Ik ben expert in het structureren van chaotische codebasen, het definiëren van duurzame architecturen en het introduceren van best practices die echt werken. CQRS, SOLID, CUPID, clean architecturen, DDD, Event Sourcing, Mob Programming – dit zijn niet zomaar buzzwords, maar tools die ik regelmatig toepas en waarover ik graag uren kan praten.</p>
+        <p>Wat ik het mooiste vind aan dit vak is dat je jezelf voortdurend moet uitdagen en vernieuwen. Maar nog beter: je kunt anderen helpen dat ook te doen. Op die manier creëer ik een betere en dynamische omgeving waarin iedereen zich thuis voelt en excellent kan werken.</p>
+      </div>
+    </section>
+
+    <section class="section experience">
+      <h2>Ervaring</h2>
+      <div class="card">
+        <h3>Senior Software Engineer @ ZF</h3>
+        <p class="date">05/2024 – heden</p>
+        <p>Als Senior Software Engineer in het Franklin-team leidde ik de ontwikkeling en evolutie van een geavanceerd rules engine- en geofencing-platform voor ZF, een toonaangevend automotive- en transportbedrijf. Het platform stelt gebruikers in staat om generieke alarmen te maken voor veel voorkomende problemen, zoals lage bandenspanning en brandstofdiefstalkeuringen, door sensorgegevens uit hardware in trailers en vrachtwagens te verwerken.</p>
+        <p>Ik heb de basis voor het herschrijven van het gehele platform ontworpen en ervoor gezorgd dat nieuwe apparaten regels aan boord kunnen uitvoeren. Het platform is gebouwd met C# met een AST (Abstract Syntax Tree) builder die regels omzet naar code die compatibel is met zowel legacy als nieuwe systemen, werkend in een high-throughput AWS-omgeving met Kafka, Redis, proto.Actor en MongoDB.</p>
+        <p>Naast kerneontwikkeling heb ik de engineeringpraktijken in de hele organisatie aanzienlijk verbeterd door het team te mentoreren: ik introduceerde en begeleidde teams over Clean Coding, Domain-Driven Design en Test-Driven Development via meerdere bedrijfsbrede workshops. Ik stroomlijnde het sensoronboarding-proces met Claude AI-agents en GitHub Copilot, waardoor teams nieuwe sensoren volledig automatisch kunnen toevoegen. Ik verdubbelde de testdekking en implementeerde een uitgebreide BDD-architectuur om tests beschrijvender en onderhoudsbaarder te maken. Met deze aanpak groeide de rules testsuite in twee jaar van 800 naar 3.500 tests, waardoor platformrobuustheid en betrouwbaarheid werden gegarandeerd.</p>
+      </div>
+
+      <div class="card">
+        <h3>Security Solutions Developer @ Euromex</h3>
+        <p class="date">05/2023 – 05/2024</p>
+        <p>In mijn functie bij Euromex concentreerde ik me op het versterken van onze applicatiebeveiliging, met een speciale focus op het implementeren van een Identity Provider via OAuth. Dit was cruciaal voor het verbeteren van de authenticatie en autorisatieprocessen. Belangrijk in dit proces was de integratie met externe providers zoals Portima Connect en Windows Active Directory, die cruciaal waren voor een naadloze en veilige gebruikerservaring. Door deze strategieën toe te passen, verbeterden we aanzienlijk de beveiliging van onze applicaties en versterkten we onze positie als een betrouwbare technologische partner.</p>
+      </div>
+
+      <div class="card">
+        <h3>Senior Fullstack .NET Developer @ Renson</h3>
+        <p class="date">11/2022 – 05/2023</p>
+        <p>Renson is een innovatief bedrijf dat momenteel een webshop heeft voor hun buitenproducten. Ze willen dit platform uitbreiden om ook hun binnenproducten te verkopen. Daarnaast willen ze een indirect platform opzetten. Hun webshop is het begin- en eindpunt van een complexe keten van applicaties. Mijn rol is om het team te helpen bij een soepele integratie en om te kijken waar onnodige technische schulden kunnen worden vermeden of in ieder geval niet blokkerend werken voor de toekomst.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET Dev Lead @ Intersentia</h3>
+        <p class="date">04/2022 – 10/2022</p>
+        <p>Bij Intercentia, een uitgever die ook software voor de personenbelasting ontwikkelt, ben ik verantwoordelijk voor het ontwerpen van een modernere Cloud-versie van hun applicatie, het modelleren van de schermen en het opzetten van de applicatiearchitectuur. Omdat het bedrijf intern nog weinig ervaring had met webtechnologieën, kon ik mijn UX-ervaring goed inzetten. Ik kreeg niet alleen de mogelijkheid om de applicatie te modelleren en ontwerpen, maar ook om deze daadwerkelijk te ontwikkelen en het team hiervan te begeleiden. Dit alles werd gerealiseerd met behulp van AWS, ECS en S3. De frontend werd ontwikkeld in Angular met een Bootstrap-team. De backend werd ontwikkeld met de API-first principes, CQRS en hexagonale architectuur in .NET 7.</p>
+      </div>
+
+      <div class="card">
+        <h3>Senior Fullstack .NET Developer / Team Lead @ ECS</h3>
+        <p class="date">05/2021 – 04/2022</p>
+        <p>Bij ECS werk ik als senior full-stack developer binnen één van de ERP-teams. Mijn taak is om de oude applicatie van VB naar .NET Core WebAPI te herwerken met een Angular-frontend. Daarnaast hebben we een extern planningspakket, Quintiq, aangekocht waarvoor we interfacing en postcalculatie moeten voorzien. Naast mijn rol als senior developer, word ik ook ingezet als tech lead en team lead.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET/VueJS Developer / Team Lead/Architect @ Spirics</h3>
+        <p class="date">09/2020 – 04/2021</p>
+        <p>Ik werkte bij Spirics, een bedrijf dat automatisatie doet van kneed- en silo-installaties. Het bedrijf wilde klaar zijn voor de volgende stap in industrie 3.0 en daarom startte er een project om de processturing uit de PLC te halen en om te vormen naar de ISA88-standaard. Het team had moeite met het definiëren van de opdracht en hoe ze hieraan konden beginnen. Daarom heb ik de structuur van het project bepaald, de grenzen vastgesteld en de interfaces met de PLC bepaald. Ook heb ik de architectuur van een "message based systeem" ontwikkeld, waarbij enkele componenten gebaseerd waren op eventSourcing. In enkele maanden hebben we op een zeer flexibele en configureerbare manier de recepten kunnen uitvoeren. We hebben ook een krachtige, maar eenvoudige voorstelling gemaakt voor het inplannen van batches en de uitvoering ervan.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET/VueJS Developer / Team Lead @ Artillium</h3>
+        <p class="date">01/2019 – 09/2020</p>
+        <p>Bij Artillium ontwikkelen ze software die de communicatie tussen operatoren zoals Telenet en Proximus en mvmo's zoals Mobile Vikings en Ello Mobile faciliteert. Met de opkomst van IoT zijn ze begonnen aan de ontwikkeling van een platform dat hierop inspeelt, waardoor nieuwe mvmo's eenvoudig hun eigen IoT divisies kunnen beheren en aankopen. Het platform bevat ook statistieken over de netwerkactiviteit.</p>
+        <p>Ik nam al snel de rol van "UI-verantwoordelijke" op mij, aangezien ik de enige was met frontend-kennis binnen het team. Na verloop van tijd werd ik benoemd tot lead van het gehele ITO-team, waarbij ik ook betrokken ben bij het recruitment proces. In deze leadership-rol heb ik het team mentoreerd en ondersteund bij professionele groei. Het team maakt gebruik van Vue.js voor de frontend en .NET Core voor de backend, waarbij alles draait in Docker met een nginx-gateway en Node.js voor het beheer van de JWT-tokens via Identity Server.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET Developer/ Architect @ Barc Labs</h3>
+        <p class="date">10/2018 – 12/2018</p>
+        <p>Bij Barc werkte ik aan een oude applicatie die gebaseerd was op WPF/WCF, maar die erg complex was geworden en waarbij zowel de database als de applicatie vol met spaghetti-code zaten. Ik kreeg als opdracht om een modernere architectuur op te zetten waarbij componenten onafhankelijk van elkaar ontwikkeld konden worden. Dit vereiste zowel technische als organisatorische veranderingen. De uitdaging was om de bedrijfskritieke componenten te identificeren en deze te analyseren via eventstorming om vervolgens nieuwe, verbeterde componenten te ontwikkelen. Dit alles vond plaats tijdens een grondige transformatie van het hele bedrijf.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET Developer @ TUI</h3>
+        <p class="date">01/2018 – 10/2018</p>
+        <p>Tui had een oude .NET back-end applicatie die dringend gerefactored moest worden met de nieuwste principes zoals CQRS, SOLID en Event Sourcing, maar ook met technieken uit de DDD en met test-driven en pair/mob programming als centrale werkwijze. Om dit te bereiken werd er een nieuw team opgericht dat in verschillende stappen te werk ging, zodat de bestaande teams ongestoord konden doorgaan met hun werk. Zo kon er aan de nieuwe applicatie worden gewerkt, die niet langer een grote monoliet was, maar een mooie zwerm van microservices die via events met elkaar communiceerden.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET Developer @ Agidens</h3>
+        <p class="date">09/2017 – 12/2017</p>
+        <p>Bij Agidens houden ze zich bezig met de automatisering van bruggen, sluizen en andere infrastructuur. Ik hielp hen bij het .NET-gedeelte van hun oplossingen. Bij het ontwikkelen van verschillende tools, zoals een REST-integratie in een andere taal waarbij de limiet voor strings 255 tekens is. Ik maakte een synchronisatie tussen een API en een OPC-server, een HTML-pagina om sluizen te bedienen met bijbehorende lichten op een REST API van een OPC en een integratie met het S7-protocol van een PLC. Ik ontwikkelde ook een testtool om de PLC te testen aan de hand van inputbestanden. Ten slotte hielp ik met het optimaliseren van de ontwikkelomgeving en -workflow van Agidens.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET Developer / Application Tester @ Recomatics</h3>
+        <p class="date">05/2017 – 08/2017</p>
+        <p>Dit project was bedoeld omdat Recomatics een vernieuwde versie van hun bestaande applicatie had gemaakt en een derde mening wilden over de robuustheid van hun applicatie, evenals hulp bij het verbeteren ervan. Om dit te doen, werden prestatietests uitgevoerd met behulp van Visual Studio om de API te benaderen en te observeren hoe de applicatie presteert onder belasting.</p>
+      </div>
+
+      <div class="card">
+        <h3>.NET Developer @ Attentia</h3>
+        <p class="date">01/2017 – 05/2017</p>
+        <p>Dit project is gericht op de ontwikkeling van de Kalender-applicatie bij Attentia. Deze applicatie stelt werknemers in staat om verschillende soorten tijdsbestedingen in te boeken, zoals vakantie, aanwezigheid, afwezigheid, ziekte, overuren, wacht, enzovoort, met de bijbehorende regels en procedures. Het bevat ook workflows voor goedkeuring, validatie van opeenvolgende ziektes en toevoeging van ziektebriefjes.</p>
+      </div>
+    </section>
+
+    <section class="section sessions">
+      <h2>Sessies</h2>
+      <div class="card session-card">
+        <h3>3 Effective habits to become a 10x developer</h3>
+        <p class="date">Techorama</p>
+        <p>https://techorama.be/speakers/session/3-effective-habits-to-become-a-10x-developer/</p>
+      </div>
+      <div class="card session-card">
+        <h3>Event sourcing & CQRS for dummies</h3>
+        <p class="date">VISUG</p>
+        <p>https://www.visug.be/Events/26</p>
+      </div>
+      <div class="card session-card">
+        <h3>DDD and onion architecture at work in C#</h3>
+        <ul>
+          <li>Mastering the visitor pattern</li>
+          <li>Release management with Feature Flags</li>
+          <li>TDD combined with BDD in C#</li>
+          <li>Event sourcing en CQRS for dummies</li>
+          <li>Become a better developer</li>
+          <li>Implementing mediator realtime</li>
+          <li>How to remove AutoMapper</li>
+        </ul>
+      </div>
+      <div class="card session-card">
+        <h3>Team4Talent Sessies</h3>
+        <ul>
+          <li>SOLID the Basics</li>
+          <li>Serverless (Part 2: Docker)</li>
+          <li>Threading Patterns</li>
+          <li>Do We Need Passwords?</li>
+          <li>Release Management with Feature Flags</li>
+          <li>Microservices Security</li>
+        </ul>
+      </div>
+      <div class="card session-card">
+        <h3>it enium Sessies</h3>
+        <ul>
+          <li>Domain-Driven Design</li>
+          <li>Waarom ik geen if's meer schrijf</li>
+          <li>Waarom scrum geen agile is</li>
+        </ul>
+      </div>
+      <div class="card session-card">
+        <h3>Howest Brugge Sessies</h3>
+        <ul>
+          <li>Domain-Driven Design (Gastcollege)</li>
+          <li>Event Sourcing & CQRS for Dummies</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
