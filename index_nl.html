@@ -260,11 +260,11 @@
                                 src="img/team4talent-logo-white-green.svg">
                         </div>
                     </div>
-                    <div class="w-full dm:w-3/4 lg:w-2/3 xl:w-5/6 px-4 md:px-0 pb-4 md:pb-0 md:pl-2">
+                    <div id="collapse" class="w-full dm:w-3/4 lg:w-2/3 xl:w-5/6 px-4 md:px-0 pb-4 md:pb-0 md:pl-2">
                         <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4">
                             <h2 class="text-2xl font-semibold my-4 text-emerald-400">SECURITY SOLUTIONS DEVELOPER @
                                 Euromex</h2>
-                            <p class="text-base pb-8 text-slate-400">05/2023 – heden </p>
+                            <p class="text-base pb-8 text-slate-400">05/2023 – 05/2024 </p>
                             <p class="text-base ">
                                 In mijn functie bij Euromex concentreerde ik me op het versterken van onze
                                 applicatiebeveiliging, met een speciale focus op het implementeren van een Identity
@@ -718,6 +718,22 @@
         showNewWords(myWordCloud);*/
 
 
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var euromex = document.getElementById('euromex');
+            if (!euromex) return;
+
+            var headings = euromex.querySelectorAll('.bg-slate-100 > h2');
+            headings.forEach(function (heading) {
+                heading.addEventListener('click', function () {
+                    var card = heading.closest('.bg-slate-100');
+                    if (card) {
+                        card.classList.toggle('open');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
