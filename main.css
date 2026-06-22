@@ -1201,3 +1201,28 @@
     border-radius: 14px !important;
   }
 }
+html, body {
+  font-family: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  line-height: 1.6;
+}
+@media screen {
+  .text-3xl, .text-4xl, .text-2xl, .text-xl, .text-base {
+    font-family: "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+}
+@media screen {
+  html, body {
+    font-weight: 600;
+  }
+  p, li, a, span, div {
+    font-weight: 600;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+  }
+}
