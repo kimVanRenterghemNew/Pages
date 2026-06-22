@@ -4,7 +4,9 @@
   "description": "my public stuff",
   "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/main.css -o ./main.css --watch"
+    "start": "npm run build & npm run serve",
+    "build": "npx @tailwindcss/cli -i ./src/main.css -o ./main.css --watch",
+    "serve": "browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://kimvanrenterghemnew.github.io/Pages",
   "devDependencies": {
-    "tailwindcss": "^3.2.2"
+    "browser-sync": "^3.0.4",
+    "@tailwindcss/cli": "^4.3.1",
+    "tailwindcss": "^4.3.1"
   }
 }
