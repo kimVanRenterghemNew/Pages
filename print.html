@@ -6,276 +6,175 @@
   <title>Print - Kim Van Renterghem</title>
   <link href="main.css" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: ui-sans-serif, system-ui, sans-serif;
-      color: #111;
-      background: #fff;
-    }
-    .wrapper {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 24px;
-    }
-    .print-header {
-      margin-bottom: 32px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #ddd;
-    }
-    .print-header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-    .print-header p {
-      margin: 12px 0 0;
-      font-size: 1rem;
-      color: #333;
-    }
-    .button-row {
-      margin-top: 18px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    .button-row button,
-    .button-row a {
-      border: 1px solid #333;
-      background: #f4f4f4;
-      color: #111;
-      padding: 10px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      cursor: pointer;
-      font-size: 0.95rem;
-    }
-    .section {
-      margin-bottom: 32px;
-    }
-    .section h2 {
-      margin: 0 0 14px;
-      font-size: 1.75rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 8px;
-    }
-    .card {
-      padding: 18px;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      background: #fff;
-    }
-    .card h3 {
-      margin: 0 0 8px;
-      font-size: 1.35rem;
-    }
-    .card p {
-      margin: 10px 0;
-      line-height: 1.7;
-      font-size: 1rem;
-    }
-    .card p.date {
-      margin: 0 0 10px;
-      color: #555;
-      font-weight: 600;
-    }
-    .session-card {
-      border-color: #bbb;
-    }
-    .session-card h3 {
-      margin-bottom: 10px;
-    }
-    .session-card ul {
-      margin: 12px 0 0;
-      padding-left: 20px;
-      color: #111;
-    }
-    .session-card ul li {
-      margin-bottom: 8px;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-    .profile-text p {
-      margin: 0 0 12px;
-      line-height: 1.8;
-    }
-    .profile-summary {
-      margin-top: 12px;
-      font-size: 1rem;
-      color: #333;
-    }
-    .sponsor-logo {
-      max-width: 240px;
-      width: 100%;
-      margin-bottom: 16px;
-    }
-    .no-print {
-      display: none;
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
     }
     @media print {
-      .button-row {
-        display: none;
-      }
-      body {
-        background: #fff;
-      }
-      .wrapper {
-        padding: 0;
-      }
-      .section {
-        page-break-inside: avoid;
+      html, body {
+        width: 210mm;
       }
     }
   </style>
 </head>
-<body>
-  <div class="wrapper">
-    <header class="print-header">
-      <h1>Kim Van Renterghem</h1>
-      <p>Be more Effective not Efficient • Increase Communication • Write code as text</p>
-      <div class="button-row">
-        <button onclick="window.print()">Print</button>
-        <a href="index.html">Back to web</a>
+<body class="m-0 p-0 font-sans text-[#111] bg-white print:bg-white">
+  <div class="max-w-[900px] mx-auto p-6 print:p-0">
+
+    <header class="mb-8 pb-4 border-b border-[#ddd]">
+      <h1 class="m-0 text-[2.2rem] leading-tight">Kim Van Renterghem</h1>
+      <p class="mt-3 mb-0 text-base text-[#333]">Be more Effective not Efficient • Increase Communication • Write code as text</p>
+      <div class="mt-[18px] flex gap-3 flex-wrap print:hidden">
+        <button onclick="window.print()" class="border border-[#333] bg-[#f4f4f4] text-[#111] px-4 py-2.5 rounded-md cursor-pointer text-[0.95rem]">Print</button>
+        <a href="index.html" class="border border-[#333] bg-[#f4f4f4] text-[#111] px-4 py-2.5 rounded-md no-underline text-[0.95rem]">Back to web</a>
       </div>
     </header>
 
-    <section class="section profile">
-      <h2>Profile</h2>
-      <div class="card profile-text">
-        <img src="img/ikke.jpeg" alt="Profile photo" style="width: 180px; height: auto; border-radius: 14px; margin-bottom: 18px;">
-        <p>Creative, eager to learn, team player, innovative thinker.</p>
-        <p>As a passionate developer, I love turning business problems into code in a creative way. My career shows a consistent pattern: not only delivering solutions, but lifting teams to a higher level. Whether I'm defining architecture for complex systems, modernizing legacy applications, or introducing engineering practices – I ensure teams become stronger and more independent.</p>
-        <p>I'm an expert at structuring chaotic codebases, defining sustainable architectures, and introducing best practices that actually work. CQRS, SOLID, CUPID, clean architectures, DDD, Event Sourcing, Mob Programming – these aren't just buzzwords, but tools I regularly apply and love to discuss in depth.</p>
-        <p>What I find most beautiful about this craft is that you have to keep challenging and renewing yourself. But even better: you can help others do the same. That way, I create a better and more dynamic environment where everyone feels at home and can excel.</p>
+    <section class="mb-8">
+      <h2 class="m-0 mb-3.5 text-[1.75rem] border-b border-[#ccc] pb-2 print:break-after-avoid">Profile</h2>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white flex flex-col md:flex-row gap-6 print:break-inside-avoid">
+        <img src="img/ikke.jpeg" alt="Profiel foto" class="w-[180px] aspect-[3/4] object-cover rounded-2xl shrink-0">
+        <div class="flex-1">
+          <p class="my-2.5 leading-[1.8] text-base">Creative, eager to learn, team player, innovative thinker.</p>
+          <p class="my-2.5 leading-[1.8] text-base">As a passionate developer, I love turning business problems into code in a creative way. My career shows a consistent pattern: not only delivering solutions, but lifting teams to a higher level. Whether I'm defining architecture for complex systems, modernizing legacy applications, or introducing engineering practices – I ensure teams become stronger and more independent.</p>
+          <p class="my-2.5 leading-[1.8] text-base">I'm an expert at structuring chaotic codebases, defining sustainable architectures, and introducing best practices that actually work. CQRS, SOLID, CUPID, clean architectures, DDD, Event Sourcing, Mob Programming – these aren't just buzzwords, but tools I regularly apply and love to discuss in depth.</p>
+          <p class="my-2.5 leading-[1.8] text-base">What I find most beautiful about this craft is that you have to keep challenging and renewing yourself. But even better: you can help others do the same. That way, I create a better and more dynamic environment where everyone feels at home and can excel.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section experience">
-      <h2>Experience</h2>
-      <div class="card">
-        <h3>Senior Software Engineer @ ZF</h3>
-        <p class="date">05/2024 – Present</p>
-        <p>As a Senior Software Engineer in the Franklin team, I led the development and evolution of a sophisticated rules engine and geofencing platform for ZF, a leading automotive and transport company. The platform enables users to create generic alarms for common issues such as low tire pressure and fuel theft detection, processing sensor data from hardware installed in trailers and trucks.</p>
-        <p>I architected the groundwork for rewriting the entire platform and ensured new devices could execute rules onboard. The platform is built using C# with an AST (Abstract Syntax Tree) builder that converts rules to code compatible with both legacy and new systems, operating in a high-throughput AWS environment with Kafka, Redis, proto.Actor and MongoDB.</p>
-        <p>Beyond core development, I significantly elevated engineering practices across the organization: I introduced and mentored teams on Clean Coding, Domain-Driven Design, and Test-Driven Development through multiple company-wide workshops. I streamlined the sensor onboarding process using Claude AI agents and GitHub Copilot, enabling teams to add new sensors completely automatically. I doubled overall test coverage and implemented a comprehensive BDD architecture to make tests more descriptive and maintainable. Under this approach, the rules testing suite grew from 800 to 3,500 tests in two years, ensuring platform robustness and reliability.</p>
+    <section class="mb-8 print:break-before-page">
+      <h2 class="m-0 mb-3.5 text-[1.75rem] border-b border-[#ccc] pb-2 print:break-after-avoid">Experience</h2>
+
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">Senior Software Engineer @ ZF</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">05/2024 – Present</p>
+        <p class="my-2.5 leading-[1.7] text-base">As a Senior Software Engineer in the Franklin team, I led the development and evolution of a sophisticated rules engine and geofencing platform for ZF, a leading automotive and transport company. The platform enables users to create generic alarms for common issues such as low tire pressure and fuel theft detection, processing sensor data from hardware installed in trailers and trucks.</p>
+        <p class="my-2.5 leading-[1.7] text-base">I architected the groundwork for rewriting the entire platform and ensured new devices could execute rules onboard. The platform is built using C# with an AST (Abstract Syntax Tree) builder that converts rules to code compatible with both legacy and new systems, operating in a high-throughput AWS environment with Kafka, Redis, proto.Actor and MongoDB.</p>
+        <p class="my-2.5 leading-[1.7] text-base">Beyond core development, I significantly elevated engineering practices across the organization: I introduced and mentored teams on Clean Coding, Domain-Driven Design, and Test-Driven Development through multiple company-wide workshops. I streamlined the sensor onboarding process using Claude AI agents and GitHub Copilot, enabling teams to add new sensors completely automatically. I doubled overall test coverage and implemented a comprehensive BDD architecture to make tests more descriptive and maintainable. Under this approach, the rules testing suite grew from 800 to 3,500 tests in two years, ensuring platform robustness and reliability.</p>
       </div>
 
-      <div class="card">
-        <h3>Security Solutions Developer @ Euromex</h3>
-        <p class="date">05/2023 – 05/2024</p>
-        <p>In my role at Euromex, I focused on strengthening our application security, with a special emphasis on implementing an Identity Provider via OAuth. This was crucial for enhancing authentication and authorization processes. A key part of this process was the integration with external providers such as Portima Connect and Windows Active Directory, which were essential for a seamless and secure user experience. By applying these strategies, we significantly improved the security of our applications and strengthened our position as a reliable technology partner.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">Security Solutions Developer @ Euromex</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">05/2023 – 05/2024</p>
+        <p class="my-2.5 leading-[1.7] text-base">In my role at Euromex, I focused on strengthening our application security, with a special emphasis on implementing an Identity Provider via OAuth. This was crucial for enhancing authentication and authorization processes. A key part of this process was the integration with external providers such as Portima Connect and Windows Active Directory, which were essential for a seamless and secure user experience. By applying these strategies, we significantly improved the security of our applications and strengthened our position as a reliable technology partner.</p>
       </div>
 
-      <div class="card">
-        <h3>Senior Fullstack .NET Developer @ Renson</h3>
-        <p class="date">11/2022 – 05/2023</p>
-        <p>Renson is an innovative company that currently has an online store for their outdoor products. They want to expand this platform to sell their indoor products as well. Additionally, they want to set up an indirect platform. Their webshop is the beginning and endpoint of a complex chain of applications. My role is to help the team with a smooth integration and to identify areas where unnecessary technical debts can be avoided or at least not impede future progress.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">Senior Fullstack .NET Developer @ Renson</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">11/2022 – 05/2023</p>
+        <p class="my-2.5 leading-[1.7] text-base">Renson is an innovative company that currently has an online store for their outdoor products. They want to expand this platform to sell their indoor products as well. Additionally, they want to set up an indirect platform. Their webshop is the beginning and endpoint of a complex chain of applications. My role is to help the team with a smooth integration and to identify areas where unnecessary technical debts can be avoided or at least not impede future progress.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET Dev Lead @ Intersentia</h3>
-        <p class="date">04/2022 – 10/2022</p>
-        <p>At Intercentia, a publisher that also develops software for personal income tax, I was responsible for designing a more modern cloud version of their application, modeling the screens, and setting up the application architecture. As the company had little internal experience with web technologies, I was able to apply my UX expertise effectively. I not only had the opportunity to model and design the application but also to develop it and mentor the team through this transformation. All of this was achieved using AWS, ECS, and S3. The frontend was developed in Angular with a Bootstrap team. The backend was developed using API-first principles, CQRS, and hexagonal architecture in .NET 7.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET Dev Lead @ Intersentia</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">04/2022 – 10/2022</p>
+        <p class="my-2.5 leading-[1.7] text-base">At Intercentia, a publisher that also develops software for personal income tax, I was responsible for designing a more modern cloud version of their application, modeling the screens, and setting up the application architecture. As the company had little internal experience with web technologies, I was able to apply my UX expertise effectively. I not only had the opportunity to model and design the application but also to develop it and mentor the team through this transformation. All of this was achieved using AWS, ECS, and S3. The frontend was developed in Angular with a Bootstrap team. The backend was developed using API-first principles, CQRS, and hexagonal architecture in .NET 7.</p>
       </div>
 
-      <div class="card">
-        <h3>Senior Fullstack .NET Developer / Team Lead @ ECS</h3>
-        <p class="date">05/2021 – 04/2022</p>
-        <p>At ECS, I worked as a senior full-stack developer in one of the ERP teams. My task was to rework the old VB application to .NET Core WebAPI with an Angular frontend. Additionally, we purchased an external planning package, Quintiq, for which we needed to provide interfacing and post-calculation. In addition to my role as a senior developer, I was also utilized as a tech lead and team lead, supporting the team’s technical growth and architectural decisions.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">Senior Fullstack .NET Developer / Team Lead @ ECS</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">05/2021 – 04/2022</p>
+        <p class="my-2.5 leading-[1.7] text-base">At ECS, I worked as a senior full-stack developer in one of the ERP teams. My task was to rework the old VB application to .NET Core WebAPI with an Angular frontend. Additionally, we purchased an external planning package, Quintiq, for which we needed to provide interfacing and post-calculation. In addition to my role as a senior developer, I was also utilized as a tech lead and team lead, supporting the team's technical growth and architectural decisions.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET/VueJS Developer / Team Lead/Architect @ Spirics</h3>
-        <p class="date">09/2020 – 04/2021</p>
-        <p>I worked at Spirics, a company that automates kneading and silo installations. The company wanted to be ready for the next step in industry 3.0, so a project was started to remove process control from the PLC and transform it to the ISA88 standard. The team had difficulty defining the project and how to get started. Therefore, I determined the structure of the project, set the boundaries, and determined the interfaces with the PLC. I also developed the architecture of a message-based system, where some components were based on event sourcing. Within a few months, we were able to execute recipes in a very flexible and configurable manner. We also created a powerful yet simple representation for scheduling batches and executing them.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET/VueJS Developer / Team Lead/Architect @ Spirics</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">09/2020 – 04/2021</p>
+        <p class="my-2.5 leading-[1.7] text-base">I worked at Spirics, a company that automates kneading and silo installations. The company wanted to be ready for the next step in industry 3.0, so a project was started to remove process control from the PLC and transform it to the ISA88 standard. The team had difficulty defining the project and how to get started. Therefore, I determined the structure of the project, set the boundaries, and determined the interfaces with the PLC. I also developed the architecture of a message-based system, where some components were based on event sourcing. Within a few months, we were able to execute recipes in a very flexible and configurable manner. We also created a powerful yet simple representation for scheduling batches and executing them.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET/VueJS Developer / Team Lead @ Artillium</h3>
-        <p class="date">01/2019 – 09/2020</p>
-        <p>At Artillium, they develop software that facilitates communication between operators such as Telenet and Proximus and MVNOs such as Mobile Vikings and Ello Mobile. With the rise of IoT, they began developing a platform that caters to this technology, enabling new MVNOs to easily manage and purchase their own IoT divisions. The platform also includes statistics on network activity.</p>
-        <p>I quickly took on the role of "UI responsible" as I was the only team member with frontend knowledge. Over time, I was appointed as the lead of the entire ITO team, where I was also involved in the recruitment process. In this leadership role, I mentored and supported the team in their professional growth. The team uses Vue.js for the frontend and .NET Core for the backend, with everything running in Docker with an nginx gateway and Node.js for managing JWT tokens through Identity Server.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET/VueJS Developer / Team Lead @ Artillium</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">01/2019 – 09/2020</p>
+        <p class="my-2.5 leading-[1.7] text-base">At Artillium, they develop software that facilitates communication between operators such as Telenet and Proximus and MVNOs such as Mobile Vikings and Ello Mobile. With the rise of IoT, they began developing a platform that caters to this technology, enabling new MVNOs to easily manage and purchase their own IoT divisions. The platform also includes statistics on network activity.</p>
+        <p class="my-2.5 leading-[1.7] text-base">I quickly took on the role of "UI responsible" as I was the only team member with frontend knowledge. Over time, I was appointed as the lead of the entire ITO team, where I was also involved in the recruitment process. In this leadership role, I mentored and supported the team in their professional growth. The team uses Vue.js for the frontend and .NET Core for the backend, with everything running in Docker with an nginx gateway and Node.js for managing JWT tokens through Identity Server.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET Developer/ Architect @ Barc Labs</h3>
-        <p class="date">10/2018 – 12/2018</p>
-        <p>At Barc, I worked on an old application based on WPF/WCF that had become very complex, with spaghetti code in both the database and application. My task was to establish a more modern architecture that would allow components to be developed independently of each other. This required both technical and organizational changes. The challenge was to identify the business-critical components and analyze them through eventstorming in order to develop new, improved components. All of this was achieved during a thorough transformation of the entire company.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET Developer/ Architect @ Barc Labs</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">10/2018 – 12/2018</p>
+        <p class="my-2.5 leading-[1.7] text-base">At Barc, I worked on an old application based on WPF/WCF that had become very complex, with spaghetti code in both the database and application. My task was to establish a more modern architecture that would allow components to be developed independently of each other. This required both technical and organizational changes. The challenge was to identify the business-critical components and analyze them through eventstorming in order to develop new, improved components. All of this was achieved during a thorough transformation of the entire company.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET Developer @ TUI</h3>
-        <p class="date">01/2018 – 10/2018</p>
-        <p>Tui had an old .NET back-end application that urgently needed to be refactored with the latest principles such as CQRS, SOLID, and Event Sourcing, as well as techniques from DDD and with test-driven and pair/mob programming as the central approach. To achieve this, a new team was created that worked in different steps, so that the existing teams could continue their work undisturbed. This allowed work to be done on the new application, which was no longer a large monolith, but a beautiful swarm of microservices that communicated with each other via events.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET Developer @ TUI</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">01/2018 – 10/2018</p>
+        <p class="my-2.5 leading-[1.7] text-base">Tui had an old .NET back-end application that urgently needed to be refactored with the latest principles such as CQRS, SOLID, and Event Sourcing, as well as techniques from DDD and with test-driven and pair/mob programming as the central approach. To achieve this, a new team was created that worked in different steps, so that the existing teams could continue their work undisturbed. This allowed work to be done on the new application, which was no longer a large monolith, but a beautiful swarm of microservices that communicated with each other via events.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET Developer @ Agidens</h3>
-        <p class="date">09/2017 – 12/2017</p>
-        <p>At Agidens, they are involved in the automation of bridges, locks, and other infrastructure. I helped them with the .NET part of their solutions. This involved developing various tools, such as a REST integration in another language where the string limit is 255 characters. Additionally, I created a synchronization between an API and an OPC server, an HTML page to operate locks with corresponding lights on a REST API of an OPC, and an integration with the S7 protocol of a PLC. I also developed a test tool to test the PLC based on input files. Finally, I assisted in optimizing Agidens' development environment and workflow.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET Developer @ Agidens</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">09/2017 – 12/2017</p>
+        <p class="my-2.5 leading-[1.7] text-base">At Agidens, they are involved in the automation of bridges, locks, and other infrastructure. I helped them with the .NET part of their solutions. This involved developing various tools, such as a REST integration in another language where the string limit is 255 characters. Additionally, I created a synchronization between an API and an OPC server, an HTML page to operate locks with corresponding lights on a REST API of an OPC, and an integration with the S7 protocol of a PLC. I also developed a test tool to test the PLC based on input files. Finally, I assisted in optimizing Agidens' development environment and workflow.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET Developer / Application Tester @ Recomatics</h3>
-        <p class="date">05/2017 – 08/2017</p>
-        <p>This project was intended because Recomatics had made a renewed version of their existing application and wanted a third opinion on the robustness of their application, as well as help improving it. To do this, performance testing was performed using Visual Studio to access the API and observe how the application performs under load.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET Developer / Application Tester @ Recomatics</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">05/2017 – 08/2017</p>
+        <p class="my-2.5 leading-[1.7] text-base">This project was intended because Recomatics had made a renewed version of their existing application and wanted a third opinion on the robustness of their application, as well as help improving it. To do this, performance testing was performed using Visual Studio to access the API and observe how the application performs under load.</p>
       </div>
 
-      <div class="card">
-        <h3>.NET Developer @ Attentia</h3>
-        <p class="date">01/2017 – 05/2017</p>
-        <p>This project focuses on the development of the Calendar application at Attentia. This application allows employees to book different types of time off, such as vacation, presence, absence, sick leave, overtime, standby, etc., with their corresponding rules and procedures. It also includes workflows for approval, validation of consecutive illnesses, and adding medical certificates.</p>
+      <div class="p-[18px] border border-[#ddd] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2 text-[1.35rem]">.NET Developer @ Attentia</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">01/2017 – 05/2017</p>
+        <p class="my-2.5 leading-[1.7] text-base">This project focuses on the development of the Calendar application at Attentia. This application allows employees to book different types of time off, such as vacation, presence, absence, sick leave, overtime, standby, etc., with their corresponding rules and procedures. It also includes workflows for approval, validation of consecutive illnesses, and adding medical certificates.</p>
       </div>
     </section>
 
-    <section class="section sessions">
-      <h2>Sessions</h2>
-      <div class="card session-card">
-        <h3>3 Effective habits to become a 10x developer</h3>
-        <p class="date">Techorama</p>
-        <p>https://techorama.be/speakers/session/3-effective-habits-to-become-a-10x-developer/</p>
+    <section class="mb-8 print:break-before-page">
+      <h2 class="m-0 mb-3.5 text-[1.75rem] border-b border-[#ccc] pb-2 print:break-after-avoid">Sessions</h2>
+
+      <div class="p-[18px] border border-[#bbb] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2.5 text-[1.35rem]">3 Effective habits to become a 10x developer</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">Techorama</p>
+        <p class="my-2.5 leading-[1.7] text-base">https://techorama.be/speakers/session/3-effective-habits-to-become-a-10x-developer/</p>
       </div>
-      <div class="card session-card">
-        <h3>Event sourcing & CQRS for dummies</h3>
-        <p class="date">VISUG</p>
-        <p>https://www.visug.be/Events/26</p>
+
+      <div class="p-[18px] border border-[#bbb] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2.5 text-[1.35rem]">Event sourcing & CQRS for dummies</h3>
+        <p class="m-0 mb-2.5 text-[#555] font-semibold">VISUG</p>
+        <p class="my-2.5 leading-[1.7] text-base">https://www.visug.be/Events/26</p>
       </div>
-      <div class="card session-card">
-        <h3>DDD and onion architecture at work in C#</h3>
-        <ul>
-          <li>Mastering the visitor pattern</li>
-          <li>Release management with Feature Flags</li>
-          <li>TDD combined with BDD in C#</li>
-          <li>Event sourcing en CQRS for dummies</li>
-          <li>Become a better developer</li>
-          <li>Implementing mediator realtime</li>
-          <li>How to remove AutoMapper</li>
+
+      <div class="p-[18px] border border-[#bbb] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2.5 text-[1.35rem]">DDD and onion architecture at work in C#</h3>
+        <ul class="mt-3 mb-0 pl-5 text-[#111] list-disc">
+          <li class="mb-2 text-base leading-[1.6]">Mastering the visitor pattern</li>
+          <li class="mb-2 text-base leading-[1.6]">Release management with Feature Flags</li>
+          <li class="mb-2 text-base leading-[1.6]">TDD combined with BDD in C#</li>
+          <li class="mb-2 text-base leading-[1.6]">Event sourcing en CQRS for dummies</li>
+          <li class="mb-2 text-base leading-[1.6]">Become a better developer</li>
+          <li class="mb-2 text-base leading-[1.6]">Implementing mediator realtime</li>
+          <li class="mb-2 text-base leading-[1.6]">How to remove AutoMapper</li>
         </ul>
       </div>
-      <div class="card session-card">
-        <h3>Team4Talent Sessions</h3>
-        <ul>
-          <li>SOLID the Basics</li>
-          <li>Serverless (Part 2: Docker)</li>
-          <li>Threading Patterns</li>
-          <li>Do We Need Passwords?</li>
-          <li>Release Management with Feature Flags</li>
-          <li>Microservices Security</li>
+
+      <div class="p-[18px] border border-[#bbb] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2.5 text-[1.35rem]">Team4Talent Sessions</h3>
+        <ul class="mt-3 mb-0 pl-5 text-[#111] list-disc">
+          <li class="mb-2 text-base leading-[1.6]">SOLID the Basics</li>
+          <li class="mb-2 text-base leading-[1.6]">Serverless (Part 2: Docker)</li>
+          <li class="mb-2 text-base leading-[1.6]">Threading Patterns</li>
+          <li class="mb-2 text-base leading-[1.6]">Do We Need Passwords?</li>
+          <li class="mb-2 text-base leading-[1.6]">Release Management with Feature Flags</li>
+          <li class="mb-2 text-base leading-[1.6]">Microservices Security</li>
         </ul>
       </div>
-      <div class="card session-card">
-        <h3>it enium Sessions</h3>
-        <ul>
-          <li>Domain-Driven Design</li>
-          <li>Waarom ik geen if's meer schrijf</li>
-          <li>Waarom scrum geen agile is</li>
+
+      <div class="p-[18px] border border-[#bbb] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2.5 text-[1.35rem]">it enium Sessions</h3>
+        <ul class="mt-3 mb-0 pl-5 text-[#111] list-disc">
+          <li class="mb-2 text-base leading-[1.6]">Domain-Driven Design</li>
+          <li class="mb-2 text-base leading-[1.6]">Waarom ik geen if's meer schrijf</li>
+          <li class="mb-2 text-base leading-[1.6]">Waarom scrum geen agile is</li>
         </ul>
       </div>
-      <div class="card session-card">
-        <h3>Howest Brugge Sessions</h3>
-        <ul>
-          <li>Domain-Driven Design (Guest Lecture)</li>
-          <li>Event Sourcing & CQRS for Dummies</li>
+
+      <div class="p-[18px] border border-[#bbb] rounded-xl mb-5 bg-white print:break-inside-avoid">
+        <h3 class="m-0 mb-2.5 text-[1.35rem]">Howest Brugge Sessions</h3>
+        <ul class="mt-3 mb-0 pl-5 text-[#111] list-disc">
+          <li class="mb-2 text-base leading-[1.6]">Domain-Driven Design (Guest Lecture)</li>
+          <li class="mb-2 text-base leading-[1.6]">Event Sourcing & CQRS for Dummies</li>
         </ul>
       </div>
     </section>
