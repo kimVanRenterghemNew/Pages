@@ -1,752 +1,495 @@
 <!doctype html>
-<html style="background-image: linear-gradient(to right, #78eca3d3 , #fadd88); width: fit-content;">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet">
+    <title>Kim Van Renterghem — Senior .NET engineer</title>
+    <meta name="description" content="Kim Van Renterghem, senior .NET engineer en spreker. Ik breng structuur in chaotische codebases en maak teams sterker.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+    <link href="cv.css" rel="stylesheet">
+    <script>document.documentElement.classList.add('js')</script>
 </head>
 
-<body class="flex w-fit">
-    <div class="flex flex-col w-fit">
-        <header
-            class="sticky top-0 z-30 left-0 right-0 h-[250px] sm:h-[150px] xl:h-[115px] drop-shadow-md bg-emerald-500 backdrop-blur backdrop-filter mb-4">
-            <div class="mx-auto max-w-8xl pl-8 pt-6 flex flex-col">
-                <div class="flex text-yellow-100 text-4xl font-semibold items-center justify-between ">
-                    Kim Van Renterghem
-                    <div class="text-sm mr-8 flex items-center gap-3">
-                        <div>
-                            <a class="underline text-yellow-300 font-bold" href="index_nl.html">Nederlands</a>
-                            <a class="underline" href="index.html">English</a>
-                        </div>
-                        <button onclick="window.location.href='print_nl.html'" class="bg-yellow-200 text-slate-900 rounded-md px-3 py-1 hover:bg-yellow-300">Print</button>
+<body>
+    <header class="bar">
+        <a class="wordmark" href="#top">Kim VR</a>
+        <nav aria-label="Hoofdmenu">
+            <a class="hide-phone" href="#work">Werk</a>
+            <a class="hide-phone" href="#lady-lens">Projecten</a>
+            <a class="hide-phone" href="#talks">Talks</a>
+            <a href="index.html" lang="en">English</a>
+            <a class="button" href="print_nl.html">Print cv</a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" data-chapter="paper" aria-labelledby="name">
+            <div class="title-wrap">
+                <h1 id="name" class="display title">
+                    <span>Kim Van</span><span>Renterghem</span>
+                </h1>
+                <p class="say">Senior .NET engineer. Ik breng structuur in chaotische codebases en maak teams sterker.</p>
+            </div>
+        </section>
+
+        <section class="chapter green wrap" data-chapter="green" aria-labelledby="profile">
+            <div class="about">
+                <h2 id="profile" class="head rise">Profiel</h2>
+                <dl class="facts rise">
+                    <div><dt>Aan de slag sinds</dt><dd>2008</dd></div>
+                    <div><dt>Opdrachten</dt><dd>18 opdrachten, waarvan 15 als consultant</dd></div>
+                    <div><dt>Spreker op</dt><dd>Techorama, VISUG, Howest</dd></div>
+                    <div><dt>Karakter</dt><dd>Creatief, leergierig, teamspeler, vernieuwende denker</dd></div>
+                </dl>
+                <div class="story rise" style="--i:1">
+                    <p class="lead">Als gepassioneerde developer vind ik het geweldig om businessproblemen op een creatieve manier om te zetten in code. Mijn carrière toont een consistent patroon: niet alleen oplossingen leveren, maar teams naar een hoger niveau tillen.</p>
+                    <p>Of ik nu architectuur definieer voor complexe systemen, legacy-applicaties moderniseer of engineering practices invoer – ik zorg dat teams zelf sterker en onafhankelijker worden.</p>
+                    <p>Ik ben expert in het structureren van chaotische codebases, het definiëren van duurzame architecturen en het introduceren van best practices die echt werken. CQRS, SOLID, CUPID, clean architecturen, DDD, Event Sourcing, Mob Programming – dit zijn niet zomaar buzzwords, maar tools die ik regelmatig toepas en waarover ik graag uren kan praten.</p>
+                    <p>Wat ik het mooiste vind aan dit vak is dat je jezelf voortdurend moet uitdagen en vernieuwen. Maar nog beter: je kunt anderen helpen dat ook te doen. Zo creëer ik een betere en dynamische omgeving waarin iedereen zich thuis voelt en kan uitblinken.</p>
+                </div>
+                <p class="record-word rise">De gereedschapskist</p>
+                <div class="records rise" style="--i:1">
+                    <div>
+                        <h3>Werkwijzen</h3>
+                        <ul>
+                            <li>Domain-Driven Design</li>
+                            <li>CQRS &amp; Event Sourcing</li>
+                            <li>SOLID &amp; CUPID</li>
+                            <li>Clean &amp; hexagonale architectuur</li>
+                            <li>TDD &amp; BDD</li>
+                            <li>Pair &amp; mob programming</li>
+                            <li>Event storming</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                         <ul>
+                            <li>.NET Core</li>
+                            <li>C#</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>vitest</li>
+                            <li>Angular</li>
+                            <li>Swagger</li>
+                            <li>CQRS</li>
+                            <li>DDD</li>
+                            <li>TDD</li>
+                            <li>SOLID</li>
+                            <li>Pain Driven Development</li>
+                            <li>Scrum</li>
+                            <li>NServiceBus</li>
+                            <li>Kafka</li>
+                            <li>SQS</li>
+                            <li>SNS</li>
+                            <li>EventStore</li>
+                            <li>Redis</li>
+                            <li>Proto.Actor</li>
+                            <li>#NoProjects</li>
+                            <li>DevOps</li>
+                            <li>Docker</li>
+                            <li>npm</li>
+                            <li>RxJS</li>
+                            <li>Vue.js</li>
+                            <li>D3</li>
+                            <li>Chart.js</li>
+                            <li>Electron</li>
+                            <li>Avalonia</li>
+                            <li>RabbitMQ</li>
+                            <li>MassTransit</li>
+                            <li>MongoDB</li>
+                            <li>Neo4j</li>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                            <li>Oracle</li>
+                            <li>DB2</li>
+                            <li>NHibernate</li>
+                            <li>AWS</li>
+                            <li>Azure</li>
+                            <li>Helm</li>
+                            <li>OpenShift</li>
+                            <li>Terraform</li>
+                            <li>nginx</li>
+                            <li>IIS</li>
+                            <li>AppVeyor</li>
+                            <li>xUnit</li>
+                            <li>Jasmine</li>
+                            <li>Karma</li>
+                            <li>NuGet</li>
+                            <li>gulp</li>
+                            <li>Visual Studio</li>
+                            <li>Rider</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>GitLab</li>
+                            <li>TFS</li>
+                            <li>Copilot</li>
+                            <li>Claude</li>
+                            <li>Agentic AI</li>
+                            <li>OPC UA</li>
+                            <li>Siemens S7</li>
+                            <li>Mendix</li>
+                            <li>Siemens Opcenter</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="flex text-yellow-200 text-xl md:text-2xl font-semibold items-center justify-between ">
-                    Be more Effective not Efficient // Increase Communication // Write code as text</div>
             </div>
-        </header>
-        <div class="print-content hidden" style="padding: 24px;">
-            <div class="print-header" style="margin-bottom: 24px;">
-                <h1 style="font-size: 2rem; margin: 0 0 12px;">Kim Van Renterghem</h1>
-                <p style="margin: 0; font-size: 1rem;">Be more Effective not Efficient • Increase Communication • Write code as text</p>
-            </div>
-            <section class="print-profile"></section>
-            <section class="print-experience"></section>
-            <section class="print-sessions"></section>
-        </div>
-        <div id="body" class="mx-auto flex max-w-8xl px-4 flex-col lg:flex-row">
-            <div class="pr-0 lg:pr-8 w-full lg:w-1/2 xl:w-1/3">
-                <div class="flex flex-col md:flex-row lg:flex-col bg-slate-100 rounded-xl drop-shadow-md p-8 ">
-                    <div class="flex justify-center md:justify-start w-2/3 md:w-[18rem] m-0 md:-m-8 lg:m-0">
-    <img class="w-[18rem] aspect-[3/4] lg:w-48 rounded-full md:rounded-md object-cover" src="img/ikke.jpeg">
-</div>
-                    <div
-                        class="pt-4 md:pt-0 lg:pt-6 md:pl-6 lg:pl-0 text-left w-full md:w-[calc(100%-16rem)] lg:w-full ml-0 md:ml-8 lg:ml-0">
-                        <p class="text-3xl font-semibold text-emerald-600">PROFIEL</p>
-                        <p class="text-lg font-semibold space-t-2 text-yellow-400">Creatief, Leergierig, Team Speler,
-                            Vernieuwende
-                            denker </p>
-                        <blockquote class="mt-4">
-                            <p class="text-base ">
-                                Als gepassioneerde developer vind ik het geweldig om business problemen om te zetten in code op een creatieve manier. Mijn carrière toont een consistent patroon: niet alleen oplossingen leveren, maar teams naar een hoger niveau tillen. Of ik nu architectuur definieer voor complexe systemen, legacy applicaties moderniseer of engineering practices invoer – ik zorg dat teams zelf sterker en onafhankelijker worden.
-                            </p>
+        </section>
 
-                            <p class="text-base mt-4">
-                                Ik ben expert in het structureren van chaotische codebasen, het definiëren van duurzame architecturen en het introduceren van best practices die echt werken. CQRS, SOLID, CUPID, clean architecturen, DDD, Event Sourcing, Mob Programming – dit zijn niet zomaar buzzwords, maar tools die ik regelmatig toepas en waarover ik graag uren kan praten.
-                            </p>
-
-                            <p class="text-base mt-4">
-                                Wat ik het mooiste vind aan dit vak is dat je jezelf voortdurend moet uitdagen en vernieuwen. Maar nog beter: je kunt anderen helpen dat ook te doen. Op die manier creëer ik een betere en dynamische omgeving waarin iedereen zich thuis voelt en excellent kan werken.
-                            </p>
-                        </blockquote>
-                    </div>
+        <section class="chapter paper wrap" data-chapter="paper" aria-labelledby="how">
+            <div class="principles">
+                <figure class="rise">
+                    <img src="img/ikke.jpeg" alt="Portret van Kim Van Renterghem, armen gekruist, lachend, buiten" width="900" height="1200">
+                </figure>
+                <div>
+                    <h2 id="how" class="head rise">Zo werk ik</h2>
+                    <ul class="rules">
+                        <li class="rise" style="--i:1"><h3>Effectief, niet efficiënt</h3><p>Eerst het juiste doen, dan pas snel.</p></li>
+                        <li class="rise" style="--i:2"><h3>Meer communicatie</h3><p>De meeste bugs beginnen als een misverstand tussen mensen.</p></li>
+                        <li class="rise" style="--i:3"><h3>Schrijf code als tekst</h3><p>Code wordt veel vaker gelezen dan geschreven, dus moet ze lezen als proza.</p></li>
+                    </ul>
                 </div>
-                <div id="sessions"
-                    class="mt-4 flex flex-col bg-emerald-50/75 md:bg-transparent rounded-xl md:rounded-none drop-shadow-md md:drop-shadow-none mb-4">
+            </div>
+        </section>
 
-                    <div class="w-full px-4 md:px-0 pb-4 md:pb-0 space-y-4">
-                        <div
-                            class="rounded-t-xl md:rounded-none md:rounded-t-xl bg-emerald-50 drop-shadow-none md:drop-shadow-md p-4 mb-4">
-                            <h2 class="text-2xl font-semibold my-0 text-emerald-400">Sessies</h2>
-                        </div>
-                        <div class="rounded-lg md:rounded-none drop-shadow-md mb-4 p-4 bg-[#201d1d]">
-                            <a class="flex flex-col"
-                                href="https://techorama.be/speakers/session/3-effective-habits-to-become-a-10x-developer/"
-                                target="_blank">
-                                <img class="w-56 p-4" src="img/techorama.svg">
-                                <h2 class="text-xl text-2xl font-semibold my-4 text-[#edce31] ">3 Effective habits to
-                                    become a 10x developer</h2>
-                            </a>
-                        </div>
+        <section id="work" class="chapter paper wrap" data-chapter="paper" aria-labelledby="work-title" style="padding-top:0">
+            <div class="work">
+                <div class="work-intro">
+                    <h2 id="work-title" class="head rise">Werk sinds 2008</h2>
+                    <p class="rise" style="--i:1">Open een opdracht om te lezen wat ik er deed. Kies een techniek om te zien waar ik ze gebruikte.</p>
+                    <fieldset class="filter rise" style="--i:2" hidden>
+                        <legend>Toon opdrachten met</legend>
+                        <button type="button" aria-pressed="false" data-tag="ddd">DDD</button>
+                        <button type="button" aria-pressed="false" data-tag="cqrs">CQRS / Event Sourcing</button>
+                        <button type="button" aria-pressed="false" data-tag="tdd">TDD / BDD</button>
+                        <button type="button" aria-pressed="false" data-tag="arch">Architecture</button>
+                        <button type="button" aria-pressed="false" data-tag="lead">Team lead</button>
+                        <button type="button" aria-pressed="false" data-tag="front">Angular / Vue</button>
+                        <button type="button" aria-pressed="false" data-tag="cloud">AWS / Azure</button>
+                        <button type="button" aria-pressed="false" data-tag="industry">Industrie &amp; MES</button>
+                    </fieldset>
+                    <p class="filter-note" aria-live="polite"></p>
+                </div>
 
-                        <div class="bg-slate-100 rounded-lg md:rounded-none drop-shadow-md mb-4 p-4">
-                            <a class="flex flex-col" href="https://www.visug.be/Events/26" target="_blank">
-                                <div class="w-full flex flex-row items-center"><img class="w-20 p-2"
-                                        src="img/visug.png">
-                                    <p class="text-center text-3xl font-bold text-[#302653] self-center">VISUG</p>
+                <ol class="ledger" reversed>
+                    <li class="now" data-tags="industry">
+                        <details>
+                            <summary><span class="co">Actemium</span><span class="role">.NET Developer</span><span class="years">09/2026 – heden</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Bij Actemium, de specialist in industriële automatisering en MES binnen VINCI Energies, werk ik als .NET developer in een productieomgeving gebouwd op Siemens Opcenter en Mendix.</p>
+                                    <p>In dit atypische landschap met meerdere platformen heb ik mij snel ingewerkt in Mendix en geleerd hoe .NET, Mendix en Opcenter samenwerken bovenop een gedeelde SQL-database. Ik focus op het analyseren en oplossen van problemen over alle drie de lagen heen, van de Mendix-frontend via de .NET-logica tot in de data.</p>
                                 </div>
-                                <h2 class="text-xl text-2xl font-semibold my-4 text-emerald-400">Event sourcing &
-                                    CQRS for dummies</h2>
-                            </a>
-                        </div>
-                        <div
-                            class="drop-shadow-md p-4 mb-4 rounded-lg md:rounded-none flex flex-col bg-white text-blue-800">
-                            <div class="self-start">
-                                <svg class="w-20 " viewBox="0 0 566.9 566.9"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path style="fill:#0057B7;" d="M565.5,283.5c0-155.9-126.4-282-282-282c-155.9,0-282,126.4-282,282c0,155.9,126.4,282,282,282
- S565.5,439.1,565.5,283.5 M60.1,160.6h137.3L84.2,440.7h399.5C437.1,500,364.7,538,283.3,538C142.5,538,28.5,424,28.5,283.3
- C28.7,238.9,40,197.1,60.1,160.6 M446.7,282.5V248h-69.1v-87.2h128.8c20.1,36.4,31.4,78.2,31.4,122.8s-11.3,86.4-31.4,122.8h-326
- l113.1-280.1H83c46.6-59.3,119-97.3,200.4-97.3c81.2,0,153.7,38,200.4,97.3H301.8v254.8h76v-98.7H446.7z" />
-                                    </g>
-                                </svg>
+                                <img class="logo" src="img/logo-actemium.webp" alt="Actemium logo" width="300" height="50" loading="lazy">
                             </div>
-                            <ul class="text-[#0057B7] mt-4 list-disc list-inside space-y-2">
-                                <li class="text-xl font-semibold">DDD and onion architecture at work in C#</li>
-                                <li class="text-xl font-semibold">Mastering the visitor pattern</li>
-                                <li class="text-xl font-semibold">Release management with Feature Flags</li>
-                                <li class="text-xl font-semibold">TDD combined with BDD in C#</li>
-                                <li class="text-xl font-semibold">Event sourcing en CQRS for dummies</li>
-                                <li class="text-xl font-semibold">Become a better developer</li>
-                                <li class="text-xl font-semibold">Implementing mediator realtime</li>
-                                <li class="text-xl font-semibold">How to remove AutoMapper</li>
-                            </ul>
-                        </div>
-                        <div class="drop-shadow-md p-4 mb-4 rounded-lg md:rounded-none flex flex-col"
-                            style="background: #252B33;">
-
-                            <img class="w-40 h-8 justify-center align-top p-2 self-start"
-                                src="img/team4talent-logo-white-green.svg" />
-
-                            <ul class="text-[#FFFFFF] mt-4 list-disc list-inside space-y-2">
-                                <li class="text-xl font-semibold ">SOLID the Basics</li>
-                                <li class="text-xl font-semibold ">Serverless (Deel 2: Docker)</li>
-                                <li class="text-xl font-semibold">Threading Patterns</li>
-                                <li class="text-xl font-semibold">Do We Need Passwords?</li>
-                                <li class="text-xl font-semibold">Release Management with Feature Flags</li>
-                                <li class="text-xl font-semibold">Microservices Security</li>
-                            </ul>
-                        </div>
-                        <div class="drop-shadow-md p-4 mb-4 rounded-lg md:rounded-none flex flex-col"
-                            style="background: #F8F8F8;">
-                            <div class="w-full h-auto justify-start align-top text-2xl p-2 flex flex-row">
-                                <div class="text-[#343434]">it</div>
-                                <div class="text-[#e84700]">enium</div>
+                        </details>
+                    </li>
+                    <li data-tags="ddd tdd arch cloud">
+                        <details>
+                            <summary><span class="co">ZF</span><span class="role">Senior Software Engineer</span><span class="years">05/2024 – 08/2026</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Als Senior Software Engineer in het Franklin-team leidde ik de ontwikkeling en evolutie van een geavanceerd rules engine- en geofencing-platform voor ZF, een toonaangevend automotive- en transportbedrijf. Het platform stelt gebruikers in staat om generieke alarmen te maken voor veel voorkomende problemen, zoals lage bandenspanning en brandstofdiefstalkeuringen, door sensorgegevens uit hardware in trailers en vrachtwagens te verwerken.</p>
+                                    <p>Ik heb de basis voor het herschrijven van het gehele platform ontworpen en ervoor gezorgd dat nieuwe apparaten regels aan boord kunnen uitvoeren. Het platform is gebouwd met C# met een AST (Abstract Syntax Tree) builder die regels omzet naar code die compatibel is met zowel legacy als nieuwe systemen, werkend in een high-throughput AWS-omgeving met Kafka, Redis, proto.Actor en MongoDB.</p>
+                                    <p>Naast kerneontwikkeling heb ik de engineeringpraktijken in de hele organisatie aanzienlijk verbeterd door het team te mentoreren: ik introduceerde en begeleidde teams over Clean Coding, Domain-Driven Design en Test-Driven Development via meerdere bedrijfsbrede workshops. Ik stroomlijnde het sensoronboarding-proces met Claude AI-agents en GitHub Copilot, waardoor teams nieuwe sensoren volledig automatisch kunnen toevoegen. Ik verdubbelde de testdekking en implementeerde een uitgebreide BDD (Behavior-Driven Development) architectuur om tests beschrijvender en onderhoudsbaarder te maken. Met deze aanpak groeide de rules testsuite in twee jaar van 800 naar 3.500 tests, waardoor platformrobuustheid en betrouwbaarheid werden gegarandeerd.</p>
+                                </div>
+                                <img class="logo" src="img/ZF_logo_STD_Blue_3C.svg" alt="ZF logo" width="120" height="120" loading="lazy">
                             </div>
-
-                            <ul class="text-[#e84700] mt-4 list-disc list-inside space-y-2">
-                                <li class="text-xl font-semibold "><a class="text-[#e84700]"
-                                        href="https://speakerdeck.com/kimvanrenterghem/domain-driven-design"
-                                        target="_blank">Domain-Driven Design</a></li>
-                                <li class="text-xl font-semibold ">Waarom ik geen if's meer schrijf</li>
-                                <li class="text-xl font-semibold ">Waarom scrum geen agile is</li>
-                            </ul>
-                        </div>
-                        <div class="rounded-lg md:rounded-none md:rounded-b-xl drop-shadow-md p-4 flex flex-col"
-                            style="background: #F0F0F0;">
-                            <div
-                                class="w-full h-auto justify-center align-top text-lg p-2 flex flex-col justify-center font-semibold text-[#333]">
-                                Howest Brugge
+                        </details>
+                    </li>
+                    <li class="group"><span class="g-name">Team4Talent</span><span class="g-what">Consultant · 11 klanten</span><span class="years">01/2017 – 05/2024</span></li>
+                    <li class="in-group" data-tags="arch">
+                        <details>
+                            <summary><span class="co">Euromex</span><span class="role">Security Solutions Developer</span><span class="years">05/2023 – 05/2024</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>In mijn functie bij Euromex concentreerde ik me op het versterken van onze applicatiebeveiliging, met een speciale focus op het implementeren van een Identity Provider via OAuth. Dit was cruciaal voor het verbeteren van de authenticatie en autorisatieprocessen. Belangrijk in dit proces was de integratie met externe providers zoals Portima Connect en Windows Active Directory, die cruciaal waren voor een naadloze en veilige gebruikerservaring. Door deze strategieën toe te passen, verbeterden we aanzienlijk de beveiliging van onze applicaties en versterkten we onze positie als een betrouwbare technologische partner.</p>
+                                </div>
+                                <img class="logo dark" src="img/team4talent-logo-white-green.svg" alt="Team4Talent logo" width="120" height="30" loading="lazy">
                             </div>
-
-                            <ul class="text-[#0057B7] mt-4 list-disc list-inside space-y-2">
-                                <li class="text-xl font-semibold ">Domain-Driven Design (Gastcollege)</li>
-                                <li class="text-xl font-semibold "><a class="text-[#0057B7]"
-                                        href="https://speakerdeck.com/kimvanrenterghem/event-sourcing-and-cqrs-for-dummies-f1e566f8-7944-460c-b92e-7ee501699813"
-                                        target="_blank">Event Sourcing & CQRS for Dummies</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col md:flex-row lg:flex-col pb-4 lg:pb-0">
-                    <div
-                        class="flex flex-col mt-4 bg-slate-100 rounded-xl w-full md:w-1/3 lg:w-full drop-shadow-md p-4 mr-2 lg:mr-0 ">
-
-                        <h2 class="text-3xl font-semibold m-4 text-emerald-600">Links</h2>
-                        <a class="flex flex-row text-base ml-4 text-indigo-400 " target="_blank"
-                            href="https://github.com/kimVanRenterghemNew/">
-                            <p class="w-14">
-                                <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32"
-                                    data-view-component="true" class="octicon octicon-mark-github v-align-middle">
-                                    <path fill-rule="evenodd"
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                                    </path>
-                                </svg>
-                            </p>
-                            <p>Github</p>
-                        </a>
-                        <a class="flex pt-2 flex-row ml-4 text-base text-indigo-400 underline" target="_blank"
-                            href="https://speakerdeck.com/kimvanrenterghem">
-                            <p class="w-14">
-                                <img alt="Speaker Deck" width="32" height="20"
-                                    src="https://d1eu30co0ohy4w.cloudfront.net/assets/mark-f4be6df1e05965cac9f98e664a6c35f5ffdd0207385d07464a9214d6cdf76082.svg">
-                            </p>
-                            <p>Speakerdeck</p>
-                        </a>
-                        <a class="flex pt-2 ml-4 flex-row text-base text-indigo-400 underline" target="_blank"
-                            href="https://www.linkedin.com/in/kim-van-renterghem/">
-                            <p class="w-14">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
-                                    fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
-                                    <path
-                                        d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
-                                    </path>
-                                </svg>
-                            </p>
-                            <p>Linkedin</p>
-                        </a>
-                    </div>
-                    <div class="flex flex-col mt-4 w-full bg-slate-100 rounded-xl drop-shadow-md p-4 ">
-
-                        <h2 class="text-3xl font-semibold m-4 text-emerald-600">Skills</h2>
-                        <div id="skils" class="flex justify-start">
-                            <img class="w-full rounded-md" src="img/skils.png">
-
-                        </div>
-                    </div>
-                </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="arch front">
+                        <details>
+                            <summary><span class="co">Renson</span><span class="role">Senior Fullstack .NET Developer</span><span class="years">11/2022 – 05/2023</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Renson is een innovatief bedrijf dat momenteel een webshop heeft voor hun buitenproducten. Ze willen dit platform uitbreiden om ook hun binnenproducten te verkopen. Daarnaast willen ze een indirect platform opzetten. Hun webshop is het begin- en eindpunt van een complexe keten van applicaties. Mijn rol is om het team te helpen bij een soepele integratie en om te kijken waar onnodige technische schulden kunnen worden vermeden of in ieder geval niet blokkerend werken voor de toekomst.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="cqrs arch lead front cloud">
+                        <details>
+                            <summary><span class="co">Intersentia</span><span class="role">.NET Dev Lead</span><span class="years">04/2022 – 10/2022</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Bij Intersentia, een uitgever die ook software voor de personenbelasting ontwikkelt, was ik verantwoordelijk voor het ontwerpen van een modernere Cloud-versie van hun applicatie, het modelleren van de schermen en het opzetten van de applicatiearchitectuur. Omdat het bedrijf intern nog weinig ervaring had met webtechnologieën, kon ik mijn UX-ervaring goed inzetten. Ik kreeg niet alleen de mogelijkheid om de applicatie te modelleren en ontwerpen, maar ook om deze daadwerkelijk te ontwikkelen en het team hiervan te begeleiden. Dit alles werd gerealiseerd met behulp van AWS, ECS en S3. De frontend werd ontwikkeld in Angular met een Bootstrap-team. De backend werd ontwikkeld met de API-first principes, CQRS en hexagonale architectuur in .NET 7.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="lead front">
+                        <details>
+                            <summary><span class="co">ECS</span><span class="role">Senior Fullstack .NET Developer / Team Lead</span><span class="years">05/2021 – 04/2022</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Bij ECS werk ik als senior full-stack developer binnen één van de ERP-teams. Mijn taak is om de oude applicatie van VB naar .NET Core WebAPI te herwerken met een Angular-frontend. Daarnaast hebben we een extern planningspakket, Quintiq, aangekocht waarvoor we interfacing en postcalculatie moeten voorzien. Naast mijn rol als senior developer, word ik ook ingezet als tech lead en team lead.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="cqrs arch lead front industry tdd ddd">
+                        <details>
+                            <summary><span class="co">Spirics</span><span class="role">.NET/Vue.js Developer / Team Lead / Architect</span><span class="years">09/2020 – 04/2021</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Ik werkte bij Spirics, een bedrijf dat automatisatie doet van kneed- en silo-installaties. Het bedrijf wilde klaar zijn voor de volgende stap in industrie 3.0 en daarom startte er een project om de processturing uit de PLC te halen en om te vormen naar de ISA88-standaard. Het team had moeite met het definiëren van de opdracht en hoe ze hieraan konden beginnen. Daarom heb ik de structuur van het project bepaald, de grenzen vastgesteld en de interfaces met de PLC bepaald. Ook heb ik de architectuur van een "message based systeem" ontwikkeld, waarbij enkele componenten gebaseerd waren op eventSourcing. In enkele maanden hebben we op een zeer flexibele en configureerbare manier de recepten kunnen uitvoeren. We hebben ook een krachtige, maar eenvoudige voorstelling gemaakt voor het inplannen van batches en de uitvoering ervan.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="lead front">
+                        <details>
+                            <summary><span class="co">Artillium</span><span class="role">.NET/Vue.js Developer / Team Lead</span><span class="years">01/2019 – 09/2020</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Bij Artillium ontwikkelen ze software die de communicatie tussen operatoren zoals Telenet en Proximus en mvmo's zoals Mobile Vikings en Ello Mobile faciliteert. Met de opkomst van IoT zijn ze begonnen aan de ontwikkeling van een platform dat hierop inspeelt, waardoor nieuwe mvmo's eenvoudig hun eigen IoT divisies kunnen beheren en aankopen. Het platform bevat ook statistieken over de netwerkactiviteit.</p>
+                                    <p>Ik nam al snel de rol van "UI-verantwoordelijke" op mij, aangezien ik de enige was met frontend-kennis binnen het team. Na verloop van tijd werd ik benoemd tot lead van het gehele ITO-team, waarbij ik ook betrokken ben bij het recruitment proces. In deze leadership-rol heb ik het team mentoreerd en ondersteund bij professionele groei. Het team maakt gebruik van Vue.js voor de frontend en .Net Core voor de backend, waarbij alles draait in Docker met een nginx-gateway en Node.js voor het beheer van de JWT-tokens via Identity Server.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="ddd arch">
+                        <details>
+                            <summary><span class="co">Barc Labs</span><span class="role">.NET Developer / Architect</span><span class="years">10/2018 – 12/2018</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Bij Barc werkte ik aan een oude applicatie die gebaseerd was op WPF/WCF, maar die erg complex was geworden en waarbij zowel de database als de applicatie vol met spaghetti-code zaten. Ik kreeg als opdracht om een modernere architectuur op te zetten waarbij componenten onafhankelijk van elkaar ontwikkeld konden worden. Dit vereiste zowel technische als organisatorische veranderingen. De uitdaging was om de bedrijfskritieke componenten te identificeren en deze te analyseren via eventstorming om vervolgens nieuwe, verbeterde componenten te ontwikkelen. Dit alles vond plaats tijdens een grondige transformatie van het hele bedrijf.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="ddd cqrs tdd arch">
+                        <details>
+                            <summary><span class="co">TUI</span><span class="role">.NET Developer</span><span class="years">01/2018 – 10/2018</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Tui had een oude .Net Back-end applicatie die dringend gerefactored moest worden met de nieuwste principes zoals CQRS, SOLID en Event Sourcing, maar ook met technieken uit de DDD en met test-driven en pair/mob programming als centrale werkwijze. Om dit te bereiken werd er een nieuw team opgericht dat in verschillende stappen te werk ging, zodat de bestaande teams ongestoord konden doorgaan met hun werk. Zo kon er aan de nieuwe applicatie worden gewerkt, die niet langer een grote monoliet was, maar een mooie zwerm van microservices die via events met elkaar communiceerden.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="industry front">
+                        <details>
+                            <summary><span class="co">Agidens</span><span class="role">.NET Developer</span><span class="years">09/2017 – 12/2017</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Bij Agidens houden ze zich bezig met de automatisering van bruggen, sluizen en andere infrastructuur. Ik hielp hen bij het .NET-gedeelte van hun oplossingen. Bij het ontwikkelen van verschillende tools, zoals een REST-integratie in een andere taal waarbij de limiet voor strings 255 tekens is. Ik maakte een synchronisatie tussen een API en een OPC-server, een HTML-pagina om sluizen te bedienen met bijbehorende lichten op een REST API van een OPC en een integratie met het S7-protocol van een PLC. Ik ontwikkelde ook een testtool om de PLC te testen aan de hand van inputbestanden. Ten slotte hielp ik met het optimaliseren van de ontwikkelomgeving en -workflow van Agidens.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="">
+                        <details>
+                            <summary><span class="co">Recomatics</span><span class="role">.NET Developer / Application Tester</span><span class="years">05/2017 – 08/2017</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Dit project was bedoeld omdat Recomatics een vernieuwde versie van hun bestaande applicatie had gemaakt en een derde mening wilden over de robuustheid van hun applicatie, evenals hulp bij het verbeteren ervan. Om dit te doen, werden prestatietests uitgevoerd met behulp van Visual Studio om de API te benaderen en te observeren hoe de applicatie presteert onder belasting.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="">
+                        <details>
+                            <summary><span class="co">Attentia</span><span class="role">.NET Developer</span><span class="years">01/2017 – 05/2017</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Dit project is gericht op de ontwikkeling van de Kalender-applicatie bij Attentia. Deze applicatie stelt werknemers in staat om verschillende soorten tijdsbestedingen in te boeken, zoals vakantie, aanwezigheid, afwezigheid, ziekte, overuren, wacht, enzovoort, met de bijbehorende regels en procedures. Het bevat ook workflows voor goedkeuring, validatie van opeenvolgende ziektes en toevoeging van ziektebriefjes.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="group"><span class="g-name">Euricom</span><span class="g-what">Consultant · 1 klant</span><span class="years">08/2016 – 12/2016</span></li>
+                    <li class="in-group" data-tags="front">
+                        <details>
+                            <summary><span class="co">House of HR</span><span class="role">.NET Developer</span><span class="years">08/2016 – 12/2016</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>House of HR is in korte tijd uitgegroeid van een KMO naar een multinational. Twee jaar tijd zijn ze overgestapt van Progress naar .NET, C# en Angular webapplicatie. Hun verschillende applicaties bevinden zich in één grote solution en tot nu toe lag de focus vooral op oplevering. Door een snel veranderende wetgeving en vijf teams ontstond er een complexe omgeving met een enorme codebasis. Ik werd ingezet om het team te versterken, te ondersteunen en hun codebase beter gestructureerd te krijgen in deze transitie.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="group"><span class="g-name">IT Division</span><span class="g-what">Consultant · 3 klanten</span><span class="years">06/2015 – 07/2016</span></li>
+                    <li class="in-group" data-tags="arch lead">
+                        <details>
+                            <summary><span class="co">ArcelorMittal</span><span class="role">.NET Developer / Architect / Lead</span><span class="years">02/2016 – 07/2016</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Arcelor werkt momenteel aan het opschalen van hun infrastructuur met als doel om uniformiteit te creëren tussen hun verschillende sites en een gemeenschappelijk databaseplatform te implementeren. In het kader hiervan wordt een van hun applicaties, genaamd "lijnplanning", die momenteel is ontwikkeld in VB6/CoolGen, opnieuw ontworpen. Ik was betrokken bij de functionele analyse om te bepalen wat de vereisten zijn van de business. Vervolgens zal de architectuur van de applicatie worden bepaald, zodat deze met minimale wijzigingen kan worden ingezet in de nieuwe, nog te bepalen architectuur. Ik was verantwoordelijk voor het kleine team dat dit project uitwerkt, in overleg met de andere teams om uniformiteit te garanderen tussen de verschillende applicaties.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="front">
+                        <details>
+                            <summary><span class="co">Constructiv</span><span class="role">.NET / AngularJS Developer</span><span class="years">10/2015 – 02/2016</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Ik heb meegewerkt aan de ontwikkeling van een website voor Constructiv met behulp van ASP.NET MVC en een HTML5/AngularJS front-end. De website was gebaseerd op een custom CMS en zowel de front-end (website) als de backend (CMS) werden ontwikkeld. Als .NET en AngularJS ontwikkelaar maakte ik deel uit van een team van drie ontwikkelaars en was ik voornamelijk verantwoordelijk voor het ontwikkelen van front-end user stories op basis van de geleverde HTML. De front-end werd volledig ontwikkeld met behulp van AngularJS, dat data ophaalde uit de backend ASP.NET MVC-controllers. Daarnaast was ik ook verantwoordelijk voor het af en toe aanpassen van de backend controllers. Ik had ook de verantwoordelijkheid om een junior teamlid te begeleiden.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="in-group" data-tags="cloud">
+                        <details>
+                            <summary><span class="co">Cloudware</span><span class="role">.NET Developer</span><span class="years">06/2015 – 10/2015</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Als .NET ontwikkelaar werkte ik bij Cloudware in een team van 4 ontwikkelaars die Microsoft Cloud producten implementeerden bij KMO's en enkele Cloud tools (online en offline) ontwikkelden, zoals migratietools, bestandsback-up naar Azure, bestandsback-up naar SharePoint Online, e-mail migratie naar Office 365, enz.</p>
+                                    <p>Mijn belangrijkste taak was om de migratietools of onderdelen die nog uit R&D-code bestonden, te refactoren tot stabiele, robuuste code die gereed was voor productie, zowel qua front-end als backend. Daarnaast bundelden we verschillende losstaande tools tot één suite. De migratietools maakten het mogelijk om een offline bestandsstructuur om te zetten naar een SharePoint Onlinesite (die deze omzet naar bibliotheken en mappen) of naar een Azure-opslag blob.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                    <li data-tags="lead">
+                        <details>
+                            <summary><span class="co">EmailGarage</span><span class="role">Developer, later Team Lead</span><span class="years">06/2008 – 10/2015</span></summary>
+                            <div class="detail">
+                                <div>
+                                    <p>Als .NET ontwikkelaar was ik verantwoordelijk voor de technische implementatie van diverse online e-marketing tools bij Emailgarage. Ik werkte aan de full stack van de tools en had als hoofdtaak het analyseren en implementeren van nieuwe functionaliteit, optimaliseren van bestaande functionaliteit en moderniseren van de interface. Ook was ik verantwoordelijk voor het managen van de deploy en rollback scenario's en voerde ik implementaties op maat uit voor bepaalde klanten.</p>
+                                    <p>Ik begon als medior ASP.NET ontwikkelaar bij Emailgarage en groeide later door naar team lead. In deze rol was ik verantwoordelijk voor de verdere opleiding en code reviews van het team. We werkten aan diverse projecten tegelijk, zoals het implementeren van nieuwe functionaliteit, aanpassen van bestaande functionaliteit en het uitvoeren van implementaties op maat voor klanten. Binnen het team werden de technologische keuzes gezamenlijk gemaakt en was er ruimte voor onderzoek en studie.</p>
+                                    <p>Als onderdeel van de redesign binnen dit project gaf ik een opleiding ASP.NET MVC. Ik heb binnen dit project ook de monitortool opnieuw geschreven in ASP.NET MVC omdat deze sterk verouderd was.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </li>
+                </ol>
             </div>
-            <div class="flex flex-col w-full lg:w-2/3 xl:w-3/4 ">
+        </section>
 
-                <div id="cariere" class="flex flex-row bg-emerald-500 p-4 shadow-inner shadow-emerald-600 mb-4">
-                    <div class="flex text-yellow-100 text-4xl font-semibold items-center justify-between ">
-                        Ervaring
-                    </div>
+        <figure class="band" data-chapter="black">
+            <div class="crop"><img class="drift" src="img/emailgarage.jpg" alt="Pixel-art garagescène van het EmailGarage-merk: auto's op lopende banden, mecaniciens en een self-servicebord" width="1440" height="698" loading="lazy"></div>
+            <figcaption class="wrap">EmailGarage, 2008–2015: waar het begon.</figcaption>
+        </figure>
+
+        <section id="lady-lens" class="chapter yellow wrap" data-chapter="yellow" aria-labelledby="lens-title">
+            <div class="project">
+                <div>
+                    <h2 id="lens-title" class="head rise">lady-lens</h2>
+                    <p class="lead rise" style="--i:1">Deterministische code-graph indexer en MCP-server: open source, in pure JavaScript, ondersteund door LadybugDB.</p>
+                    <p class="rise" style="--i:2">lady-lens groeide binnen de bouw van Kura, onze eigen coding agent, en werd daarna een eigen package.</p>
+                    <p class="rise" style="--i:2">Zet codebases (JavaScript/TypeScript, Python, C#) zonder zware LLM-overhead om in een bevraagbare kennisgraaf met symbolen, afhankelijkheden (IMPORTS, CALLS, TESTS), impactanalyse en deterministische subgraaf-extractie voor AI coding agents.</p>
+                    <p class="rise" style="--i:2">Combineert AST-/semantische extractie met een lokaal getraind, reproduceerbaar lineair rankingmodel (IDF + pairwise logistic loss) om contextbloat en tokenverbruik bij AI-agents drastisch te verlagen.</p>
                 </div>
-                <div id="zf"
-                    class="flex flex-col md:flex-row bg-white/50 md:bg-transparent rounded-xl md:rounded-none drop-shadow-md md:drop-shadow-none mt-4">
-                    <div class="pb-4 md:pb-0 pr-0 lg:pr-2 w-full md:w-1/4 lg:w-1/3 xl:w-1/6 ">
-                        <div class="rounded-t-xl md:rounded-none md:rounded-l-xl drop-shadow-md p-6 h-full bg-white">
-                            <svg class="w-1/3 md:w-full" viewBox="0 0 566.9 566.9" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <path style="fill:#0057B7;" d="M565.5,283.5c0-155.9-126.4-282-282-282c-155.9,0-282,126.4-282,282c0,155.9,126.4,282,282,282
- S565.5,439.1,565.5,283.5 M60.1,160.6h137.3L84.2,440.7h399.5C437.1,500,364.7,538,283.3,538C142.5,538,28.5,424,28.5,283.3
- C28.7,238.9,40,197.1,60.1,160.6 M446.7,282.5V248h-69.1v-87.2h128.8c20.1,36.4,31.4,78.2,31.4,122.8s-11.3,86.4-31.4,122.8h-326
- l113.1-280.1H83c46.6-59.3,119-97.3,200.4-97.3c81.2,0,153.7,38,200.4,97.3H301.8v254.8h76v-98.7H446.7z" />
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="w-full dm:w-3/4 lg:w-2/3 xl:w-5/6 px-4 md:px-0 pb-4 md:pb-0 md:pl-2">
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4">
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">SENIOR SOFTWARE ENGINEER @
-                                ZF</h2>
-                            <p class="text-base pb-8 text-slate-400">05/2024 – heden </p>
-                            <p class="text-base ">
-                                Als Senior Software Engineer in het Franklin-team leidde ik de ontwikkeling en evolutie
-                                van een geavanceerd rules engine- en geofencing-platform voor ZF, een toonaangevend
-                                automotive- en transportbedrijf. Het platform stelt gebruikers in staat om generieke
-                                alarmen te maken voor veel voorkomende problemen, zoals lage bandenspanning en
-                                brandstofdiefstalkeuringen, door sensorgegevens uit hardware in trailers en vrachtwagens
-                                te verwerken.
-                            </p>
-                            <p class="text-base mt-4">
-                                Ik heb de basis voor het herschrijven van het gehele platform ontworpen en ervoor
-                                gezorgd dat nieuwe apparaten regels aan boord kunnen uitvoeren. Het platform is gebouwd
-                                met C# met een AST (Abstract Syntax Tree) builder die regels omzet naar code die
-                                compatibel is met zowel legacy als nieuwe systemen, werkend in een high-throughput
-                                AWS-omgeving met Kafka, Redis, proto.Actor en MongoDB.
-                            </p>
-                            <p class="text-base mt-4">
-                                Naast kerneontwikkeling heb ik de engineeringpraktijken in de hele organisatie
-                                aanzienlijk verbeterd door het team te mentoreren: ik introduceerde en begeleidde teams over Clean Coding,
-                                Domain-Driven Design en Test-Driven Development via meerdere bedrijfsbrede workshops. Ik
-                                stroomlijnde het sensoronboarding-proces met Claude AI-agents en GitHub Copilot,
-                                waardoor teams nieuwe sensoren volledig automatisch kunnen toevoegen. Ik verdubbelde de
-                                testdekking en implementeerde een uitgebreide BDD (Behavior-Driven Development)
-                                architectuur om tests beschrijvender en onderhoudsbaarder te maken. Met deze aanpak
-                                groeide de rules testsuite in twee jaar van 800 naar 3.500 tests, waardoor
-                                platformrobuustheid en betrouwbaarheid werden gegarandeerd.
-                            </p>
-                        </div>
-                    </div>
+                <dl class="numerals">
+                    <div class="rise" style="--i:1"><dt>3,4 s</dt><dd>voor een volledige sync van een repository met 349 bestanden.</dd></div>
+                    <div class="rise" style="--i:2"><dt>0,2 s</dt><dd>voor een incrementele sync na een wijziging.</dd></div>
+                </dl>
+                <p class="cta rise" style="--i:3"><a class="button dark" href="https://github.com/kimVanRenterghemNew/lady-lens" target="_blank" rel="noopener">Bekijk lady-lens op GitHub</a></p>
+            </div>
+        </section>
+
+        <section id="vaultgate" class="chapter paper wrap" data-chapter="paper" aria-labelledby="vault-title">
+            <div class="vault">
+                <h2 id="vault-title" class="head rise">Vaultgate</h2>
+                <p class="lead rise" style="--i:1">Je AI-agents gebruiken je sleutels. Ze zien ze nooit.</p>
+                <div class="shot rise" style="--i:2" data-ui>
+                    <img src="img/vaultgate-activity.png" alt="Vaultgate-portaal, scherm Activiteit: een lijst beslissingen zoals granted en target-host-not-allowed, met de details van één verzoek" width="1180" height="760" loading="lazy">
                 </div>
-                <div id="t4t"
-                    class="flex flex-col md:flex-row bg-[#252B33]/50 md:bg-transparent rounded-xl md:rounded-none drop-shadow-md md:drop-shadow-none mt-4 ">
-                    <div class="pb-4 md:pb-0 pr-0 lg:pr-2 w-full md:w-1/4 lg:w-1/3 xl:w-1/6">
-                        <div
-                            class="rounded-t-xl md:rounded-none md:rounded-l-xl drop-shadow-md bg-[#252B33] p-6 h-full">
-                            <img class="w-1/3 md:w-full " alt="team4talent-logo"
-                                src="img/team4talent-logo-white-green.svg">
-                        </div>
-                    </div>
-                    <div id="collapse" class="w-full dm:w-3/4 lg:w-2/3 xl:w-5/6 px-4 md:px-0 pb-4 md:pb-0 md:pl-2">
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4">
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">SECURITY SOLUTIONS DEVELOPER @
-                                Euromex</h2>
-                            <p class="text-base pb-8 text-slate-400">05/2023 – 05/2024 </p>
-                            <p class="text-base ">
-                                In mijn functie bij Euromex concentreerde ik me op het versterken van onze
-                                applicatiebeveiliging, met een speciale focus op het implementeren van een Identity
-                                Provider via OAuth. Dit was cruciaal voor het verbeteren van de authenticatie en
-                                autorisatieprocessen. Belangrijk in dit proces was de integratie met externe providers
-                                zoals Portima Connect en Windows Active Directory, die cruciaal waren voor een naadloze
-                                en veilige gebruikerservaring. Door deze strategieën toe te passen, verbeterden we
-                                aanzienlijk de beveiliging van onze applicaties en versterkten we onze positie als een
-                                betrouwbare technologische partner.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">SENIOR FULLSTACK .NET DEVELOPER @
-                                Renson</h2>
-                            <p class="text-base pb-8 text-slate-400">11/2022 – 05/2023 </p>
-                            <p class="text-base ">
-                                Renson is een innovatief bedrijf dat momenteel een webshop heeft voor hun
-                                buitenproducten. Ze willen dit platform uitbreiden om ook hun binnenproducten te
-                                verkopen. Daarnaast willen ze een indirect platform opzetten. Hun webshop is het begin-
-                                en eindpunt van een complexe keten van applicaties. Mijn rol is om het team te helpen
-                                bij een soepele integratie en om te kijken waar onnodige technische schulden kunnen
-                                worden vermeden of in ieder geval niet blokkerend werken voor de toekomst.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEV LEAD @
-                                INTERSENTIA</h2>
-                            <p class="text-base pb-8 text-slate-400">04/2022 – 10/2022 </p>
-                            <p class="text-base ">
-                                Bij Intercentia, een uitgever die ook software voor de personenbelasting ontwikkelt, ben
-                                ik verantwoordelijk voor het ontwerpen van een modernere Cloud-versie van hun
-                                applicatie, het modelleren van de schermen en het opzetten van de
-                                applicatiearchitectuur. Omdat het bedrijf intern nog weinig ervaring had met
-                                webtechnologieën, kon ik mijn UX-ervaring goed inzetten. Ik kreeg niet alleen de
-                                mogelijkheid om de applicatie te modelleren en ontwerpen, maar ook om deze daadwerkelijk
-                                te ontwikkelen en het team hiervan te begeleiden. Dit alles werd gerealiseerd met behulp van AWS, ECS en S3. De frontend
-                                werd ontwikkeld in Angular met een Bootstrap-team. De backend werd ontwikkeld met de
-                                API-first principes, CQRS en hexagonale architectuur in .NET 7.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">SENIOR FULLSTACK .NET
-                                DEVELOPER / TEAM LEAD @ ECS</h2>
-                            <p class="text-base pb-8 text-slate-400">05/2021 – 04/2022 </p>
-                            <p class="text-base ">
-                                Bij ECS werk ik als senior full-stack developer binnen één van de ERP-teams. Mijn taak
-                                is om de oude applicatie van VB naar .NET Core WebAPI te herwerken met een
-                                Angular-frontend. Daarnaast hebben we een extern planningspakket, Quintiq, aangekocht
-                                waarvoor we interfacing en postcalculatie moeten voorzien. Naast mijn rol als senior
-                                developer, word ik ook ingezet als tech lead en team lead.
-
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET/VUEJS DEVELOPER /
-                                TEAM LEAD/ARCHITECT @ SPIRICS</h2>
-                            <p class="text-base pb-8 text-slate-400">09/2020 – 04/2021 </p>
-                            <p class="text-base ">
-                                Ik werkte bij Spirics, een bedrijf dat automatisatie doet van kneed- en
-                                silo-installaties. Het bedrijf wilde klaar zijn voor de volgende stap in industrie 3.0
-                                en daarom startte er een project om de processturing uit de PLC te halen en om te vormen
-                                naar de ISA88-standaard. Het team had moeite met het definiëren van de opdracht en hoe
-                                ze hieraan konden beginnen. Daarom heb ik de structuur van het project bepaald, de
-                                grenzen vastgesteld en de interfaces met de PLC bepaald. Ook heb ik de architectuur van
-                                een "message based systeem" ontwikkeld, waarbij enkele componenten gebaseerd waren op
-                                eventSourcing. In enkele maanden hebben we op een zeer flexibele en configureerbare
-                                manier de recepten kunnen uitvoeren. We hebben ook een krachtige, maar eenvoudige
-                                voorstelling gemaakt voor het inplannen van batches en de uitvoering ervan.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET/VUEJS DEVELOPER / TEAM LEAD @
-                                ARTILLIUM</h2>
-                            <p class="text-base pb-8 text-slate-400">01/2019 – 09/2020</p>
-                            <p class="text-base ">
-                                Bij Artillium ontwikkelen ze software die de communicatie tussen operatoren zoals
-                                Telenet en Proximus en mvmo's zoals Mobile Vikings en Ello Mobile faciliteert. Met de
-                                opkomst van IoT zijn ze begonnen aan de ontwikkeling van een platform dat hierop
-                                inspeelt, waardoor nieuwe mvmo's eenvoudig hun eigen IoT divisies kunnen beheren en
-                                aankopen. Het platform bevat ook statistieken over de netwerkactiviteit.
-
-                                Ik nam al snel de rol van "UI-verantwoordelijke" op mij, aangezien ik de enige was met
-                                frontend-kennis binnen het team. Na verloop van tijd werd ik benoemd tot lead van het
-                                gehele ITO-team, waarbij ik ook betrokken ben bij het recruitment proces. In deze leadership-rol heb ik het team mentoreerd en ondersteund bij professionele groei. Het team maakt
-                                gebruik van Vue.js voor de frontend en .Net Core voor de backend, waarbij alles draait
-                                in Docker met een nginx-gateway en Node.js voor het beheer van de JWT-tokens via
-                                Identity Server.
-
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER/ ARCHITECT @ BARC
-                                LABS </h2>
-                            <p class="text-base pb-8 text-slate-400">10/2018 – 12/2018 </p>
-                            <p class="text-base ">
-                                Bij Barc werkte ik aan een oude applicatie die gebaseerd was op WPF/WCF, maar die erg
-                                complex was geworden en waarbij zowel de database als de applicatie vol met
-                                spaghetti-code zaten. Ik kreeg als opdracht om een modernere architectuur op te zetten
-                                waarbij componenten onafhankelijk van elkaar ontwikkeld konden worden. Dit vereiste
-                                zowel technische als organisatorische veranderingen. De uitdaging was om de
-                                bedrijfskritieke componenten te identificeren en deze te analyseren via eventstorming om
-                                vervolgens nieuwe, verbeterde componenten te ontwikkelen. Dit alles vond plaats tijdens
-                                een grondige transformatie van het hele bedrijf.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER @ TUI </h2>
-                            <p class="text-base pb-8 text-slate-400">01/2018 – 10/2018 </p>
-                            <p class="text-base ">
-                                Tui had een oude .Net Back-end applicatie die dringend gerefactored moest worden met de
-                                nieuwste principes zoals CQRS, SOLID en Event Sourcing, maar ook met technieken uit de
-                                DDD en met test-driven en pair/mob programming als centrale werkwijze. Om dit te
-                                bereiken werd er een nieuw team opgericht dat in verschillende stappen te werk ging,
-                                zodat de bestaande teams ongestoord konden doorgaan met hun werk. Zo kon er aan de
-                                nieuwe applicatie worden gewerkt, die niet langer een grote monoliet was, maar een mooie
-                                zwerm van microservices die via events met elkaar communiceerden.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER @ AGIDENS</h2>
-                            <p class="text-base pb-8 text-slate-400">09/2017 – 12/2017 </p>
-                            <p class="text-base ">
-                                Bij Agidens houden ze zich bezig met de automatisering van bruggen, sluizen en andere
-                                infrastructuur. Ik hielp hen bij het .NET-gedeelte van hun oplossingen. Bij het
-                                ontwikkelen van verschillende tools, zoals een REST-integratie in een andere taal waarbij de limiet voor
-                                strings 255 tekens is. Ik maakte een synchronisatie tussen een API en een
-                                OPC-server, een HTML-pagina om sluizen te bedienen met bijbehorende lichten op een REST
-                                API van een OPC en een integratie met het S7-protocol van een PLC. Ik ontwikkelde ook
-                                een testtool om de PLC te testen aan de hand van inputbestanden. Ten slotte hielp ik
-                                met het optimaliseren van de ontwikkelomgeving en -workflow van Agidens.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER / APPLICATION TESTER
-                                @ RECOMATICS</h2>
-                            <p class="text-base pb-8 text-slate-400">05/2017 – 08/2017 </p>
-                            <p class="text-base ">
-                                Dit project was bedoeld omdat Recomatics een vernieuwde versie van hun bestaande
-                                applicatie had gemaakt en een derde mening wilden over de robuustheid van hun
-                                applicatie, evenals hulp bij het verbeteren ervan. Om dit te doen, werden prestatietests
-                                uitgevoerd met behulp van Visual Studio om de API te benaderen en te observeren hoe de
-                                applicatie presteert onder belasting.</p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER @ ATTENTIA</h2>
-                            <p class="text-base pb-8 text-slate-400">01/2017 – 05/2017 </p>
-                            <p class="text-base ">
-                                Dit project is gericht op de ontwikkeling van de Kalender-applicatie bij Attentia. Deze
-                                applicatie stelt werknemers in staat om verschillende soorten tijdsbestedingen in te
-                                boeken, zoals vakantie, aanwezigheid, afwezigheid, ziekte, overuren, wacht, enzovoort,
-                                met de bijbehorende regels en procedures. Het bevat ook workflows voor goedkeuring,
-                                validatie van opeenvolgende ziektes en toevoeging van ziektebriefjes.
-                            </p>
-                        </div>
-                    </div>
+                <div class="vault-text">
+                    <p class="rise">Een lokale poort tussen AI-agents en het internet. De agent stuurt een placeholder (<code>{{secret:github_token}}</code>); Vaultgate vult de echte sleutel pas in wanneer het verzoek je computer verlaat, en alleen voor de tool, de host en de plek in het verzoek die je toestond. Antwoorden worden opgeschoond voor de agent ze ziet, ook base64- en hex-kopieën.</p>
+                    <p class="rise" style="--i:1">Eén beslissingstabel waarin de eerste regel wint en zijn naam meegeeft in elk antwoord. De kluissleutel is willekeurig en per passkey ingepakt via de WebAuthn PRF-extensie; elk veld is versleuteld met XChaCha20-Poly1305. Alles wat blijft duren vraagt een aanraking van je passkey: een programma kan op een knop klikken, maar geen beveiligingssleutel aanraken.</p>
+                    <p class="note rise" style="--i:2">Preview, versie 0.0.1-beta.0. De screenshots tonen het echte portaal met testdata.</p>
+                    <p class="rise" style="--i:3"><a class="button dark" href="https://github.com/kimVanRenterghemNew/Vaultgate" target="_blank" rel="noopener">Bekijk Vaultgate op GitHub</a></p>
                 </div>
+                <figure class="tray rise" style="--i:2" data-ui>
+                    <img src="img/vaultgate-approval.png" alt="Vaultgate-goedkeuringsvenster dat vraagt of claude-code github_token naar een host mag sturen, met knoppen weigeren, eenmalig of 30 minuten toestaan" width="536" height="295" loading="lazy">
+                    <figcaption>Het goedkeuringsvenster: eenmalig toestaan, of een tijd lang met een aanraking van je passkey.</figcaption>
+                </figure>
+            </div>
+        </section>
 
-                <div id="euricom"
-                    class="flex flex-col md:flex-row bg-[#686C6F]/50 md:bg-transparent rounded-xl md:rounded-none drop-shadow-md md:drop-shadow-none mt-4">
-                    <div class="pb-4 md:pb-0 pr-0 lg:pr-2 w-full md:w-1/4 lg:w-1/3 xl:w-1/6 ">
-                        <div
-                            class="rounded-t-xl md:rounded-none md:rounded-l-xl drop-shadow-md p-6 h-full bg-[#686C6F]">
-                            <svg class="w-1/3 md:w-full" viewBox="0 0 189.499 35">
-                                <g transform="translate(-18 -15.07)">
-                                    <path
-                                        d="M596.535,20.535h9.574V15.07H595.88a4.809,4.809,0,0,0-4.81,4.81V30.109h5.465Z"
-                                        transform="translate(-418.568 0)" fill="lime"></path>
-                                    <path
-                                        d="M649.268,69.353a3.924,3.924,0,1,1-3.923-3.923,3.923,3.923,0,0,1,3.923,3.923"
-                                        transform="translate(-455.344 -36.783)" fill="lime"></path>
-                                    <path
-                                        d="M675.329,15.07H665.1v5.465h9.574v9.574h5.465V19.88a4.807,4.807,0,0,0-4.81-4.81"
-                                        transform="translate(-472.639 0)" fill="lime"></path>
-                                    <path d="M674.674,89.11v9.574H665.1v5.465h10.229a4.809,4.809,0,0,0,4.81-4.81V89.11Z"
-                                        transform="translate(-472.639 -54.079)" fill="lime"></path>
-                                    <path
-                                        d="M596.535,98.681V89.11H591.07V99.339a4.809,4.809,0,0,0,4.81,4.81h10.229V98.684h-9.574Z"
-                                        transform="translate(-418.568 -54.079)" fill="lime"></path>
-                                    <path
-                                        d="M121.361,69.748V50.15h-4.653v10.7a8.389,8.389,0,0,1-.553,3.3,4.067,4.067,0,0,1-4.049,2.421,3.175,3.175,0,0,1-3.173-1.76,6.824,6.824,0,0,1-.442-2.769V50.15h-4.71V62.04a12.178,12.178,0,0,0,.838,5.12c.971,2.017,2.9,3.038,5.732,3.038a7.843,7.843,0,0,0,2.6-.388,7.072,7.072,0,0,0,2.289-1.459,3.377,3.377,0,0,0,.639-.741c.21-.329.337-.518.4-.593l.658-.825V69.75h4.427Z"
-                                        transform="translate(-62.653 -25.622)" fill="#fff"></path>
-                                    <path
-                                        d="M198.548,53.013c.167,0,.38.005.652.019.156.008.329.019.51.035V48.376c-.054,0-.094-.008-.121-.008q-.085-.008-.218-.008a5.505,5.505,0,0,0-3.645,1.165,10.9,10.9,0,0,0-2.065,2.688l-.685,1.132v-4.5H188.64v19.6h4.616V59.09a8.5,8.5,0,0,1,.658-3.791c.8-1.518,2.359-2.286,4.635-2.286"
-                                        transform="translate(-124.635 -24.315)" fill="#fff"></path>
-                                    <rect width="4.653" height="19.598" transform="translate(79.556 24.53)" fill="#fff">
-                                    </rect>
-                                    <path
-                                        d="M293.194,61a6.142,6.142,0,1,1,0-5.505l3.683-2.124a10.388,10.388,0,1,0,0,9.76Z"
-                                        transform="translate(-189.406 -23.95)" fill="#fff"></path>
-                                    <path
-                                        d="M368.2,48.03a10.341,10.341,0,1,0,10.339,10.339A10.35,10.35,0,0,0,368.2,48.03m0,16.343a6,6,0,1,1,6-6,6.008,6.008,0,0,1-6,6"
-                                        transform="translate(-248.232 -24.074)" fill="#fff"></path>
-                                    <path
-                                        d="M466.742,52.282a3.007,3.007,0,0,1,2.941,1.623,4.645,4.645,0,0,1,.412,2.068v12.58h4.71L474.84,56.1a17.952,17.952,0,0,0-.181-2.936,5.492,5.492,0,0,0-1.081-2.445,5.588,5.588,0,0,0-2.219-1.717,6.75,6.75,0,0,0-2.513-.5,7.558,7.558,0,0,0-3.486.8,6.412,6.412,0,0,0-2.445,2.491l-.38.652-.28-.7a5.6,5.6,0,0,0-1.639-2.289,7.037,7.037,0,0,0-7.328.17,8.256,8.256,0,0,0-1.777,2.16l-.682,1.095V48.99H446.4V68.55h4.653V56.682a6.026,6.026,0,0,1,.472-2.669,3.493,3.493,0,0,1,3.386-1.674,2.952,2.952,0,0,1,2.966,1.69,7.027,7.027,0,0,1,.407,2.785V68.552H462.9V56.811a6.157,6.157,0,0,1,.461-2.483,3.422,3.422,0,0,1,3.381-2.046"
-                                        transform="translate(-312.902 -24.424)" fill="#fff"></path>
-                                    <path
-                                        d="M22.51,55.991l.046-.259a5.467,5.467,0,0,1,5.476-4.767c3.1,0,5.414,1.971,5.624,4.791l.016.237H22.51Zm5.708-8.681C22.109,47.31,18,51.548,18,57.857c0,6.233,4.2,10.585,10.218,10.585a11.088,11.088,0,0,0,3.834-.666,8.281,8.281,0,0,0,4.977-4.292l.154-.337H32.769c-1.124,1.345-2.612,1.639-4.554,1.639A5.521,5.521,0,0,1,22.5,59.747l-.032-.248H38.018l.019-.127a13.371,13.371,0,0,0,.135-2c0-5.929-4.09-10.067-9.954-10.067"
-                                        transform="translate(0 -23.548)" fill="#fff"></path>
-                                    <path d="M250.476,23.6a2.618,2.618,0,1,1-2.618-2.618,2.619,2.619,0,0,1,2.618,2.618"
-                                        transform="translate(-165.975 -4.317)" fill="#fff"></path>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="w-full dm:w-3/4 lg:w-2/3 xl:w-5/6 px-4 md:px-0 pb-4 md:pb-0 md:pl-2">
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 ">
+        <section id="talks" class="chapter black wrap talks" data-chapter="black" aria-labelledby="talks-title">
+            <h2 id="talks-title" class="head rise">Talks &amp; sessies</h2>
+            <table class="lineup rise" style="--i:1">
+                <tbody>
+                    <tr><th colspan="3" scope="colgroup">Conferenties &amp; user groups</th></tr>
+                    <tr><td><a href="https://techorama.be/speakers/session/3-effective-habits-to-become-a-10x-developer/" target="_blank" rel="noopener">3 Effective habits to become a 10x developer</a></td><td>Techorama</td><td><a href="https://techorama.be/speakers/session/3-effective-habits-to-become-a-10x-developer/" target="_blank" rel="noopener">Sessiepagina</a></td></tr>
+                    <tr><td><a href="https://www.visug.be/Events/26" target="_blank" rel="noopener">Event sourcing &amp; CQRS for dummies</a></td><td>VISUG</td><td><a href="https://www.visug.be/Events/26" target="_blank" rel="noopener">Eventpagina</a></td></tr>
+                </tbody>
+                <tbody>
+                    <tr><th colspan="3" scope="colgroup">Onderwijs</th></tr>
+                    <tr><td>Domain-Driven Design (gastcollege)</td><td>Howest Brugge</td><td></td></tr>
+                    <tr><td><a href="https://speakerdeck.com/kimvanrenterghem/event-sourcing-and-cqrs-for-dummies-f1e566f8-7944-460c-b92e-7ee501699813" target="_blank" rel="noopener">Event Sourcing &amp; CQRS for Dummies</a></td><td>Howest Brugge</td><td><a href="https://speakerdeck.com/kimvanrenterghem/event-sourcing-and-cqrs-for-dummies-f1e566f8-7944-460c-b92e-7ee501699813" target="_blank" rel="noopener">Slides</a></td></tr>
+                </tbody>
+                <tbody>
+                    <tr><th colspan="3" scope="colgroup">Interne sessies</th></tr>
+                    <tr><td>DDD and onion architecture at work in C#</td><td>ZF</td><td></td></tr>
+                    <tr><td>Mastering the visitor pattern</td><td>ZF</td><td></td></tr>
+                    <tr><td>Release management with Feature Flags</td><td>ZF, Team4Talent</td><td></td></tr>
+                    <tr><td>TDD combined with BDD in C#</td><td>ZF</td><td></td></tr>
+                    <tr><td>Event sourcing and CQRS for dummies</td><td>ZF</td><td></td></tr>
+                    <tr><td>Become a better developer</td><td>ZF</td><td></td></tr>
+                    <tr><td>Implementing mediator realtime</td><td>ZF</td><td></td></tr>
+                    <tr><td>How to remove AutoMapper</td><td>ZF</td><td></td></tr>
+                    <tr><td>SOLID the Basics</td><td>Team4Talent</td><td></td></tr>
+                    <tr><td>Serverless (Deel 2: Docker)</td><td>Team4Talent</td><td></td></tr>
+                    <tr><td>Threading Patterns</td><td>Team4Talent</td><td></td></tr>
+                    <tr><td>Do We Need Passwords?</td><td>Team4Talent</td><td></td></tr>
+                    <tr><td>Microservices Security</td><td>Team4Talent</td><td></td></tr>
+                    <tr><td><a href="https://speakerdeck.com/kimvanrenterghem/domain-driven-design" target="_blank" rel="noopener">Domain-Driven Design</a></td><td>itenium</td><td><a href="https://speakerdeck.com/kimvanrenterghem/domain-driven-design" target="_blank" rel="noopener">Slides</a></td></tr>
+                    <tr><td>Waarom ik geen if's meer schrijf</td><td>itenium</td><td></td></tr>
+                    <tr><td>Waarom scrum geen agile is</td><td>itenium</td><td></td></tr>
+                </tbody>
+            </table>
+        </section>
 
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER @ HOUSE OF HR
-                            </h2>
-                            <p class="text-base pb-8 text-slate-400">08/2016 – 12/2016</p>
-                            <p class="text-base ">
-                                House of HR is in korte tijd uitgegroeid van een KMO naar een multinational. Twee jaar
-                                tijd zijn ze overgestapt van Progress naar .NET, C# en Angular webapplicatie. Hun
-                                verschillende applicaties bevinden zich in één grote solution en tot nu toe lag de focus
-                                vooral op oplevering. Door een snel veranderende wetgeving en vijf teams ontstond er een
-                                complexe omgeving met een enorme codebasis. Ik werd ingezet om het team te versterken,
-                                te ondersteunen en hun codebase beter gestructureerd te krijgen in deze transitie.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <section class="chapter green wrap contact" data-chapter="green" aria-labelledby="contact-title">
+            <div>
+                <h2 id="contact-title" class="head rise">Contact</h2>
+                <p class="ask rise" style="--i:1">Een team dat structuur nodig heeft, of een sessie over DDD? Stuur me een bericht.</p>
+            </div>
+            <a class="big display rise" href="https://www.linkedin.com/in/kim-van-renterghem/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <div class="corners">
+                <span>België · Nederlands &amp; Engels</span>
+                <span><a href="https://github.com/kimVanRenterghemNew/" target="_blank" rel="noopener">GitHub</a> · <a href="https://speakerdeck.com/kimvanrenterghem" target="_blank" rel="noopener">Speaker Deck</a></span>
+            </div>
+        </section>
+    </main>
 
-                <div id="itdivision"
-                    class="flex flex-col md:flex-row bg-slate-100/50 md:bg-transparent rounded-xl md:rounded-none drop-shadow-md md:drop-shadow-none mt-4">
-                    <div class="pb-4 md:pb-0 pr-0 lg:pr-2 w-full md:w-1/4 lg:w-1/3 xl:w-1/6 ">
-                        <div
-                            class="rounded-t-xl md:rounded-none md:rounded-l-xl drop-shadow-md p-6 h-full font-bold bg-slate-100 text-[#5D6089]">
-                            IT Division
-                        </div>
-                    </div>
-                    <div class="w-full dm:w-3/4 lg:w-2/3 xl:w-5/6 px-4 md:px-0 pb-4 md:pb-0 md:pl-2">
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 ">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER/ ARCHITECT/ LEAD @
-                                ARCELOR MITTAL
-                            </h2>
-                            <p class="text-base pb-8 text-slate-400">02/2016 – 07/2016 </p>
-                            <p class="text-base ">
-                                Arcelor werkt momenteel aan het opschalen van hun infrastructuur met als doel om
-                                uniformiteit te creëren tussen hun verschillende sites en een gemeenschappelijk
-                                databaseplatform te implementeren. In het kader hiervan wordt een van hun applicaties,
-                                genaamd "lijnplanning", die momenteel is ontwikkeld in VB6/CoolGen, opnieuw ontworpen.
-                                Ik was betrokken bij de functionele analyse om te bepalen wat de vereisten zijn van de
-                                business. Vervolgens zal de architectuur van de applicatie worden bepaald, zodat deze
-                                met minimale wijzigingen kan worden ingezet in de nieuwe, nog te bepalen architectuur.
-                                Ik was verantwoordelijk voor het kleine team dat dit project uitwerkt, in overleg met de
-                                andere teams om uniformiteit te garanderen tussen de verschillende applicaties.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET / ANGULAR JS DEVELOPER @
-                                CONSTRUCTIV
-                            </h2>
-                            <p class="text-base pb-8 text-slate-400">10/2015 – 02/2016</p>
-                            <p class="text-base ">
-                                Ik heb meegewerkt aan de ontwikkeling van een website voor Constructiv met behulp van
-                                ASP.NET MVC en een HTML5/AngularJS front-end. De website was gebaseerd op een custom CMS
-                                en zowel de front-end (website) als de backend (CMS) werden ontwikkeld. Als .NET en
-                                AngularJS ontwikkelaar maakte ik deel uit van een team van drie ontwikkelaars en was ik
-                                voornamelijk verantwoordelijk voor het ontwikkelen van front-end user stories op basis
-                                van de geleverde HTML. De front-end werd volledig ontwikkeld met behulp van AngularJS,
-                                dat data ophaalde uit de backend ASP.NET MVC-controllers. Daarnaast was ik ook
-                                verantwoordelijk voor het af en toe aanpassen van de backend controllers. Ik had ook de
-                                verantwoordelijkheid om een junior teamlid te begeleiden.
-                            </p>
-                        </div>
-                        <div class="bg-slate-100 rounded-lg md:rounded-none md:rounded-r-xl drop-shadow-md p-4 mt-4">
-
-                            <h2 class="text-2xl font-semibold my-4 text-emerald-400">.NET DEVELOPER @ CLOUDWARE
-                            </h2>
-                            <p class="text-base pb-8 text-slate-400">06/2008 – 10/2015</p>
-                            <p class="text-base ">
-                                Als .NET ontwikkelaar werkte ik bij Cloudware in een team van 4 ontwikkelaars die
-                                Microsoft Cloud producten implementeerden bij KMO's en enkele Cloud tools (online en
-                                offline) ontwikkelden, zoals migratietools, bestandsback-up naar Azure, bestandsback-up
-                                naar SharePoint Online, e-mail migratie naar Office 365, enz.
-
-                                Mijn belangrijkste taak was om de migratietools of onderdelen die nog uit R&D-code
-                                bestonden, te refactoren tot stabiele, robuuste code die gereed was voor productie,
-                                zowel qua front-end als backend. Daarnaast bundelden we verschillende losstaande tools
-                                tot één suite. De migratietools maakten het mogelijk om een offline bestandsstructuur om
-                                te zetten naar een SharePoint Onlinesite (die deze omzet naar bibliotheken en mappen) of
-                                naar een Azure-opslag blob.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="emailGarage" class="flex flex-row my-4">
-                    <div class="w-full ">
-                        <div class=" rounded-xl drop-shadow-md p-6 h-full" style="background: url(img/emailgarage.jpg) no-repeat;
- background-size: cover;">
-                            <div class="bg-slate-100/75 p-4 ">
-
-                                <h2 class="text-2xl font-bold my-4 text-[#F04C0D]">DEVELOPER @ EmailGarage
-                                </h2>
-                                <p class="text-base pb-8 font-semibold text-slate-500">06/2015 – 10/2015</p>
-                                <p class="text-base font-semibold text-slate-800">
-                                    Als .NET ontwikkelaar was ik verantwoordelijk voor de technische implementatie van
-                                    diverse online e-marketing tools bij Emailgarage. Ik werkte aan de full stack van de
-                                    tools en had als hoofdtaak het analyseren en implementeren van nieuwe
-                                    functionaliteit, optimaliseren van bestaande functionaliteit en moderniseren van de
-                                    interface. Ook was ik verantwoordelijk voor het managen van de deploy en rollback
-                                    scenario's en voerde ik implementaties op maat uit voor bepaalde klanten.</p>
-                                <p class="text-base font-semibold mt-2 text-slate-800">
-                                    Ik begon als medior ASP.NET ontwikkelaar bij Emailgarage en groeide later door naar
-                                    team lead. In deze rol was ik verantwoordelijk voor de verdere opleiding en code
-                                    reviews van het team. We werkten aan diverse projecten tegelijk, zoals het
-                                    implementeren van nieuwe functionaliteit, aanpassen van bestaande functionaliteit en
-                                    het uitvoeren van implementaties op maat voor klanten. Binnen het team werden de
-                                    technologische keuzes gezamenlijk gemaakt en was er ruimte voor onderzoek en studie.
-                                </p>
-                                <p class="text-base font-semibold mt-2 text-slate-800">
-                                    Als onderdeel van de redesign binnen dit project gaf ik een opleiding ASP.NET MVC.
-                                    Ik heb binnen dit project ook de monitortool opnieuw geschreven in ASP.NET MVC omdat
-                                    deze sterk verouderd was.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+    <footer class="foot" data-chapter="green">
+        <p class="display name" aria-hidden="true">Kim Van Renterghem</p>
+        <div class="foot-row">
+            <ul class="places">
+                <li><a href="https://www.linkedin.com/in/kim-van-renterghem/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/kimVanRenterghemNew/" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://speakerdeck.com/kimvanrenterghem" target="_blank" rel="noopener">Speaker Deck</a></li>
+            </ul>
+            <div class="links">
+                <ul>
+                    <li><a href="#work">Werk</a></li>
+                    <li><a href="#lady-lens">lady-lens</a></li>
+                    <li><a href="#vaultgate">Vaultgate</a></li>
+                    <li><a href="#talks">Talks</a></li>
+                </ul>
+                <ul>
+                    <li><a href="print_nl.html">Printversie</a></li>
+                    <li><a href="index.html" lang="en">English</a></li>
+                    <li><a href="#top">Terug naar boven</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+        <div class="legal">
+            <p>Kim Van Renterghem · Senior .NET engineer</p>
+            <a href="#top">Terug naar boven</a>
+        </div>
+    </footer>
 
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
-    <script>
-
-        //Simple animated example of d3-cloud - https://github.com/jasondavies/d3-cloud
-        //Based on https://github.com/jasondavies/d3-cloud/blob/master/examples/simple.html
-
-        // Encapsulate the word cloud functionality
-        function wordCloud(selector) {
-
-            var fill = d3.scale.category20();
-
-            //Construct the word cloud's SVG element
-            var svg = d3.select(selector).append("svg")
-                .attr("width", 500)
-                .attr("height", 500)
-                .append("g")
-                .attr("transform", "translate(250,250)");
-
-
-            //Draw the word cloud
-            function draw(words) {
-                var cloud = svg.selectAll("g text")
-                    .data(words, function (d) { return d.text; })
-
-                //Entering words
-                cloud.enter()
-                    .append("text")
-                    .style("font-family", "Impact")
-                    .style("fill", function (d, i) { return fill(i); })
-                    .attr("text-anchor", "middle")
-                    .attr('font-size', 1)
-                    .text(function (d) { return d.text; });
-
-                //Entering and existing words
-                cloud
-                    .transition()
-                    .duration(600)
-                    .style("font-size", function (d) { return d.size + "px"; })
-                    .attr("transform", function (d) {
-                        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-                    })
-                    .style("fill-opacity", 1);
-
-                //Exiting words
-                cloud.exit()
-                    .transition()
-                    .duration(200)
-                    .style('fill-opacity', 1e-6)
-                    .attr('font-size', 1)
-                    .remove();
-            }
-
-
-            //Use the module pattern to encapsulate the visualisation code. We'll
-            // expose only the parts that need to be public.
-            return {
-
-                //Recompute the word cloud for a new set of words. This method will
-                // asycnhronously call draw when the layout has been computed.
-                //The outside world will need to call this function, so make it part
-                // of the wordCloud return value.
-                update: function (words) {
-                    d3.layout.cloud().size([500, 500])
-                        .words(words)
-                        .padding(5)
-                        .rotate(function () { return ~~(Math.random() * 2) * 90; })
-                        .font("Impact")
-                        .fontSize(function (d) { return d.size; })
-                        .on("end", draw)
-                        .start();
-                }
-            }
-
-        }
-
-        //Some sample data - http://en.wikiquote.org/wiki/Opening_lines
-        var words = [
-            "c# javascript",
-            "The boy with fair hair lowered himself down the last few feet of rock and began to pick his way toward the lagoon.",
-            "When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton.",
-            "azure aws d3"
-        ]
-
-        //Prepare one of the sample sentences by removing punctuation,
-        // creating an array of words and computing a random size attribute.
-        function getWords(i) {
-            const ppp = words.map((w, index) => {
-                console.log(w)
-                var ooo = w.replace(/[!\.,:;\?]/g, '')
-                    .split(' ')
-                console.table(ooo)
-                return ooo.map(word => { return { word, index } })
-            })
-                .flatMap(d => { return { text: d.word, size: (10 - d.index) * 60 } })
-            console.table(ppp)
-            return ppp
-        }
-
-        //This method tells the word cloud to redraw with a new set of words.
-        //In reality the new words would probably come from a server request,
-        // user input or some other source.
-        function showNewWords(vis, i) {
-            i = i || 0;
-
-            vis.update(getWords(i++ % words.length))
-            //setTimeout(function() { showNewWords(vis, i + 1)}, 2000)
-        }
-
-        //Create a new instance of the word cloud visualisation.
-        /*var myWordCloud = wordCloud('#skils');
-       
-        //Start cycling through the demo data
-        showNewWords(myWordCloud);*/
-
-
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var euromex = document.getElementById('euromex');
-            if (!euromex) return;
-
-            var headings = euromex.querySelectorAll('.bg-slate-100 > h2');
-            headings.forEach(function (heading) {
-                heading.addEventListener('click', function () {
-                    var card = heading.closest('.bg-slate-100');
-                    if (card) {
-                        card.classList.toggle('open');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="cv.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+/* Print CV: same type system as the site, ink on white, A4. */
+@page { size: A4; margin: 16mm 16mm 18mm; }
+:root { --ink: #0a0a0a; --muted: #4a5550; --green: #007a51; font-family: "Archivo", system-ui, sans-serif; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: var(--ink); font-size: 10.5pt; line-height: 1.45; }
+a { color: inherit; text-decoration: none; }
+.sheet { max-width: 210mm; margin: 0 auto; padding: 24px 32px 48px; }
+
+h1, h2 { font-weight: 800; font-stretch: 62%; text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.9; margin: 0; }
+.name { font-size: 54pt; }
+h2 { font-size: 24pt; margin: 0 0 14px; color: var(--green); break-after: avoid; }
+h3 { font-size: 11pt; margin: 0; }
+section { margin-top: 30px; }
+
+.tools { display: flex; gap: 16px; align-items: center; margin-bottom: 20px; font-size: 10pt; }
+.tools button { background: #fde047; border: 0; min-height: 40px; padding: 0 18px; font: 500 10pt "Archivo", sans-serif; cursor: pointer; }
+.tools a { text-decoration: underline; text-underline-offset: 3px; }
+.say { font-size: 14pt; margin: 12px 0 6px; max-width: 60ch; }
+.contact { font-size: 9pt; color: var(--muted); margin: 0; }
+
+.two { display: grid; grid-template-columns: 1.6fr 1fr; gap: 28px; }
+.story p { margin: 0 0 .7em; }
+aside { background: #f1f4ee; padding: 14px 16px; align-self: start; }
+.facts { display: grid; gap: 8px; margin: 0 0 14px; font-size: 9pt; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; font-weight: 600; }
+aside h3 { font-size: 9pt; margin-top: 10px; }
+aside .list { font-size: 8.5pt; margin: 2px 0 0; line-height: 1.35; }
+.rules { list-style: none; padding: 0; margin: 14px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; font-size: 9pt; color: var(--muted); }
+.rules strong { display: block; color: var(--ink); font-weight: 800; font-stretch: 62%; text-transform: uppercase; font-size: 13pt; line-height: 1; margin-bottom: 4px; }
+
+.role { margin-bottom: 14px; break-inside: avoid; }
+.role header { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: baseline; margin-bottom: 4px; }
+.role .what { color: var(--muted); font-size: 9.5pt; }
+.role .when { font-size: 9.5pt; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.role p { margin: 0 0 .45em; }
+.role .lead { font-weight: 600; }
+.role .nums strong { font-weight: 800; }
+.projects code { font-family: inherit; font-weight: 600; }
+
+.talks h3 { font-size: 10pt; color: var(--green); margin: 12px 0 4px; break-after: avoid; }
+.talks table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+.talks tr { break-inside: avoid; }
+.talks td { padding: 2px 0; vertical-align: baseline; }
+.talks td:last-child { text-align: right; white-space: nowrap; padding-left: 12px; color: var(--muted); }
+.talks .url { display: block; font-size: 8pt; color: var(--muted); }
+
+@media print {
+  .tools { display: none; }
+  .sheet { padding: 0; max-width: none; }
+  .work { break-before: page; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+@media (max-width: 640px) {
+  .sheet { padding: 16px; }
+  .name { font-size: 40pt; }
+  .two, .rules { grid-template-columns: 1fr; }
+  .role header { grid-template-columns: 1fr auto; }
+  .role .what { grid-column: 1 / -1; grid-row: 2; }
+}
+.work .group { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: baseline; margin: 20px 0 8px; font-weight: 800; font-stretch: 62%; text-transform: uppercase; font-size: 15pt; color: var(--green); break-after: avoid; }
+.work .group .what, .work .group .when { font: 400 9.5pt "Archivo", sans-serif; text-transform: none; color: var(--muted); }
+.work .group ~ .role { padding-left: 12px; }
+.work .role.direct { padding-left: 0; }
